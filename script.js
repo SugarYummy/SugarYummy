@@ -176,8 +176,11 @@ function fallbackCopy(text, done) {
 
 function guess(name) {
   if (over) return;
-  name = (name ?? $('guess').value).trim();
-  const g = pool.find((e) => e.name.toLowerCase() === name.toLowerCase());
+  name = (name ?? $('guess').value).trim().toLowerCase();
+  if (!name) return updateStatus('Type a boss name first.');
+  // Exact name, otherwise the first boss whose name contains what was typed.
+  const g = pool.find((e) => e.name.toLowerCase() === name)
+    || pool.find((e) => !guesses.includes(e.name) && e.name.toLowerCase().includes(name));
   if (!g) return updateStatus('Pick a boss from the list.');
   if (guesses.includes(g.name)) return updateStatus('Already guessed.');
   $('guess').value = '';
@@ -200,11 +203,16 @@ function renderList() {
     const div = document.createElement('div');
     div.textContent = e.name;
     if (i === active) div.className = 'active';
-    div.addEventListener('mousedown', (ev) => { ev.preventDefault(); guess(e.name); });
+    div.addEventListener('mousedown', (ev) => { ev.preventDefault(); pick(e.name); });
     list.appendChild(div);
   });
   list.hidden = matches.length === 0 || over;
   list.querySelector('.active')?.scrollIntoView({ block: 'nearest' });
+}
+// Fill the box with the chosen boss; the Guess button (or Enter) submits it.
+function pick(name) {
+  $('guess').value = name;
+  closeList();
 }
 function closeList() {
   matches = [];
@@ -219,7 +227,7 @@ $('guess').addEventListener('keydown', (e) => {
   if (e.key === 'ArrowDown' && open) { active = Math.min(active + 1, matches.length - 1); renderList(); e.preventDefault(); }
   else if (e.key === 'ArrowUp' && open) { active = Math.max(active - 1, 0); renderList(); e.preventDefault(); }
   else if (e.key === 'Escape') closeList();
-  else if (e.key === 'Enter') guess(open ? matches[active].name : undefined);
+  else if (e.key === 'Enter') { if (open) pick(matches[active].name); else guess(); }
 });
 $('go').addEventListener('click', () => guess());
 $('share').addEventListener('click', share);
