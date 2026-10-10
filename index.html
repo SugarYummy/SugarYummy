@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maple Wordle</title>
+<style>
+  td, th { border: 1px solid #999; padding: 4px 8px; }
+  table { border-collapse: collapse; margin-top: 8px; }
+  .green { background: #6c6; }
+  .grey { background: #ccc; }
+  .red { background: #e66; }
+</style>
+</head>
+<body>
+<h1>Maple Wordle</h1>
+<label>Mode:
+  <select id="mode">
+    <option value="story">Story</option>
+    <option value="normal" selected>Normal</option>
+    <option value="hard">Hard</option>
+    <option value="extreme">Extreme</option>
+  </select>
+</label>
+<p id="status"></p>
+<input id="guess" list="bosses" placeholder="Type a boss">
+<datalist id="bosses"></datalist>
+<button id="go">Guess</button>
+<table>
+  <thead><tr><th>Boss</th><th>World</th><th>Gender</th><th>Region</th><th>Phases</th><th>HP</th><th>Entry Lv</th></tr></thead>
+  <tbody id="rows"></tbody>
+</table>
+<script src="script.js"></script>
+</body>
+</html>
