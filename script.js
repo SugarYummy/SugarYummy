@@ -1,4 +1,4 @@
-let data, mode, day, pool, answer, guesses, maxGuesses, over, matches, active;
+let data, mode, day, live, pool, answer, guesses, maxGuesses, over, matches, active;
 
 const $ = (id) => document.getElementById(id);
 const DAY_MS = 86400000;
@@ -16,9 +16,9 @@ function formatHp(entry) {
 }
 
 // Same answer for everyone on the same day; each mode gets a different one.
-function dailyIndex(size) {
-  let h = day;
-  for (const c of mode) h = (h * 31 + c.charCodeAt(0)) % 1000003;
+function dailyIndex(size, d = day, m = mode) {
+  let h = d;
+  for (const c of m) h = (h * 31 + c.charCodeAt(0)) % 1000003;
   return h % size;
 }
 
@@ -93,19 +93,25 @@ function answerRow() {
 }
 
 // Progress is saved per mode per day, so refreshing can't reset today's guesses.
-const saveKey = () => `mapleWordle:${mode}:${day}`;
-function load() {
-  try { return JSON.parse(localStorage.getItem(saveKey())) || []; } catch { return []; }
+const saveKey = (d = day, m = mode) => `mapleWordle:${m}:${d}`;
+function load(d, m) {
+  try { return JSON.parse(localStorage.getItem(saveKey(d, m))) || []; } catch { return []; }
 }
 function save() {
   try { localStorage.setItem(saveKey(), JSON.stringify(guesses)); } catch {}
 }
 
-function start() {
+const poolFor = (m) => data.pools[m === 'story' ? 'normal' : m];
+
+// Play a given day's puzzle; with no day, play today's.
+function start(d) {
   mode = document.querySelector('#modes .on').dataset.mode;
-  day = today();
-  pool = data.pools[mode === 'story' ? 'normal' : mode];
+  live = d == null || d === today();
+  day = live ? today() : d;
+  pool = poolFor(mode);
   answer = pool[dailyIndex(pool.length)];
+  $('puzzle').textContent = `Puzzle #${day - FIRST_DAY + 1} (${dateLabel(day)})` + (live ? '' : ' - Archive');
+  $('today').hidden = live;
   maxGuesses = data.attempts[mode];
   guesses = [];
   over = false;
@@ -131,19 +137,45 @@ function record(g) {
   $('share').hidden = true;
   if (g.name === answer.name) {
     over = true;
-    updateStatus(`Correct! It was ${answer.name}. Come back tomorrow for a new boss.`);
+    updateStatus(`Correct! It was ${answer.name}. ${nextHint()}`);
   } else if (maxGuesses != null && guesses.length >= maxGuesses) {
     over = true;
     answerRow();
-    updateStatus(`Out of guesses. It was ${answer.name}. Come back tomorrow for a new boss.`);
+    updateStatus(`Out of guesses. It was ${answer.name}. ${nextHint()}`);
   } else {
     updateStatus();
   }
   if (over) $('share').hidden = false;
 }
 
+const nextHint = () => live ? 'Come back tomorrow for a new boss.' : 'Pick another day from the Archive.';
+
 // Puzzle #1 is launch day; numbers count up by one every UTC day.
 const FIRST_DAY = Date.UTC(2026, 9, 10) / DAY_MS;
+const dateLabel = (d) => new Date(d * DAY_MS).toLocaleDateString(undefined, { timeZone: 'UTC', month: 'short', day: 'numeric', year: 'numeric' });
+
+// Archive: every puzzle from #1 to today for the current mode, with your result if you played it.
+function openArchive() {
+  const list = $('archiveList');
+  list.innerHTML = '';
+  $('archiveMode').textContent = MODE_NAME[mode];
+  const p = poolFor(mode);
+  for (let d = today(); d >= FIRST_DAY; d--) {
+    const saved = load(d, mode);
+    const ans = p[dailyIndex(p.length, d, mode)];
+    const max = data.attempts[mode];
+    let result = 'Not played';
+    if (saved.includes(ans.name)) result = `Won ${saved.length}/${max ?? '∞'}`;
+    else if (max != null && saved.length >= max) result = 'Lost';
+    else if (saved.length) result = `In progress (${saved.length} guesses)`;
+    const btn = document.createElement('button');
+    btn.textContent = `#${d - FIRST_DAY + 1} - ${dateLabel(d)}${d === today() ? ' (today)' : ''} - ${result}`;
+    btn.addEventListener('click', () => { closeArchive(); start(d); });
+    list.appendChild(btn);
+  }
+  $('archive').hidden = false;
+}
+const closeArchive = () => { $('archive').hidden = true; };
 const EMOJI = { green: '🟩', yellow: '🟨', red: '🟥' };
 const MODE_NAME = { story: 'Story', normal: 'Normal', hard: 'Hard', extreme: 'Extreme' };
 
@@ -231,16 +263,19 @@ $('guess').addEventListener('keydown', (e) => {
 });
 $('go').addEventListener('click', () => guess());
 $('share').addEventListener('click', share);
+$('archiveBtn').addEventListener('click', () => { if (data) openArchive(); });
+$('archiveClose').addEventListener('click', closeArchive);
+$('today').addEventListener('click', () => start());
 for (const b of document.querySelectorAll('#modes button')) {
   b.addEventListener('click', () => {
     document.querySelector('#modes .on').classList.remove('on');
     b.classList.add('on');
-    if (data) start();
+    if (data) start(live ? undefined : day);
   });
 }
 
 function tick() {
-  if (data && today() !== day) start();
+  if (data && live && today() !== day) start();
   const ms = (today() + 1) * DAY_MS - Date.now();
   const s = Math.floor(ms / 1000);
   const pad = (n) => String(n).padStart(2, '0');

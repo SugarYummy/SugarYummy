@@ -13,6 +13,12 @@
   footer.panel { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); z-index: 1; margin: 0;
                  padding: 6px 16px; border-radius: 12px 12px 0 0; font-size: 14px; white-space: nowrap; }
   .game { position: relative; z-index: 2; margin-bottom: 80px; }
+  #archiveBtn { position: fixed; top: 12px; left: 12px; z-index: 3; padding: 6px 12px; }
+  #archive { position: fixed; inset: 0; z-index: 4; background: rgba(0, 0, 0, 0.4); display: flex;
+             align-items: flex-start; justify-content: center; }
+  #archive[hidden] { display: none; }
+  #archive .panel { margin-top: 48px; max-height: calc(100vh - 96px); overflow-y: auto; min-width: 280px; }
+  #archiveList button { display: block; width: 100%; margin: 4px 0; padding: 6px; text-align: left; }
   th { background: rgba(255, 255, 255, 0.6); }
   td, th { border: 1px solid #999; padding: 4px 8px; }
   table { border-collapse: collapse; margin: 8px auto; }
@@ -29,8 +35,18 @@
 </style>
 </head>
 <body>
+<button id="archiveBtn">Archive</button>
+<div id="archive" hidden>
+  <div class="panel">
+    <h2>Archive (<span id="archiveMode"></span>)</h2>
+    <div id="archiveList"></div>
+    <p><button id="archiveClose">Close</button></p>
+  </div>
+</div>
 <div class="panel game">
 <h1>Maple Wordle</h1>
+<p id="puzzle"></p>
+<p><button id="today" hidden>Back to today</button></p>
 <div id="modes">Mode:
   <button data-mode="story">Story</button>
   <button data-mode="normal" class="on">Normal</button>
@@ -56,6 +72,6 @@
   Want to give any suggestions or feedback?<br>
   <a href="https://discord.gg/f22H4UJ" target="_blank" rel="noopener">Join the Discord!</a>
 </footer>
-<script src="script.js?v=7"></script>
+<script src="script.js?v=8"></script>
 </body>
 </html>
