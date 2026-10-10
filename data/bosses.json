@@ -14,7 +14,7 @@
  "pools": {
   "normal": [
    {
-    "name": "Zakum",
+    "name": "Zakum (Chaos)",
     "boss": "Zakum",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -30,7 +30,7 @@
     "hpLabel": null
    },
    {
-    "name": "Papulatus",
+    "name": "Papulatus (Chaos)",
     "boss": "Papulatus",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -46,7 +46,7 @@
     "hpLabel": null
    },
    {
-    "name": "Magnus",
+    "name": "Magnus (Hard)",
     "boss": "Magnus",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -61,7 +61,7 @@
     "hpLabel": null
    },
    {
-    "name": "Hilla",
+    "name": "Hilla (Hard)",
     "boss": "Hilla",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -76,7 +76,7 @@
     "hpLabel": null
    },
    {
-    "name": "Mori Ranmaru",
+    "name": "Mori Ranmaru (Hard)",
     "boss": "Mori Ranmaru",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -91,7 +91,7 @@
     "hpLabel": null
    },
    {
-    "name": "Horntail",
+    "name": "Horntail (Chaos)",
     "boss": "Horntail",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -108,7 +108,7 @@
     "hpLabel": null
    },
    {
-    "name": "Pierre",
+    "name": "Pierre (Chaos)",
     "boss": "Pierre",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -123,7 +123,7 @@
     "hpLabel": null
    },
    {
-    "name": "Von Bon",
+    "name": "Von Bon (Chaos)",
     "boss": "Von Bon",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -138,7 +138,7 @@
     "hpLabel": null
    },
    {
-    "name": "Crimson Queen",
+    "name": "Crimson Queen (Chaos)",
     "boss": "Crimson Queen",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -153,7 +153,7 @@
     "hpLabel": null
    },
    {
-    "name": "Vellum",
+    "name": "Vellum (Chaos)",
     "boss": "Vellum",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -168,7 +168,7 @@
     "hpLabel": null
    },
    {
-    "name": "Von Leon",
+    "name": "Von Leon (Hard)",
     "boss": "Von Leon",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -183,7 +183,7 @@
     "hpLabel": null
    },
    {
-    "name": "Arkarium",
+    "name": "Arkarium (Normal)",
     "boss": "Arkarium",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -198,7 +198,7 @@
     "hpLabel": null
    },
    {
-    "name": "Gollux",
+    "name": "Gollux (Hell)",
     "boss": "Gollux",
     "difficulty": "Hell",
     "world": "Masteria",
@@ -215,7 +215,7 @@
     "hpLabel": null
    },
    {
-    "name": "OMNI-CLN",
+    "name": "OMNI-CLN (Normal)",
     "boss": "OMNI-CLN",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -230,7 +230,7 @@
     "hpLabel": null
    },
    {
-    "name": "Pink Bean",
+    "name": "Pink Bean (Chaos)",
     "boss": "Pink Bean",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -247,7 +247,7 @@
     "hpLabel": null
    },
    {
-    "name": "Cygnus",
+    "name": "Cygnus (Normal)",
     "boss": "Cygnus",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -262,7 +262,7 @@
     "hpLabel": null
    },
    {
-    "name": "Princess No",
+    "name": "Princess No (Normal)",
     "boss": "Princess No",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -277,7 +277,7 @@
     "hpLabel": null
    },
    {
-    "name": "Akechi Mitsuhide",
+    "name": "Akechi Mitsuhide (Normal)",
     "boss": "Akechi Mitsuhide",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -293,7 +293,7 @@
     "hpLabel": null
    },
    {
-    "name": "Lotus",
+    "name": "Lotus (Hard)",
     "boss": "Lotus",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -310,7 +310,7 @@
     "hpLabel": null
    },
    {
-    "name": "Damien",
+    "name": "Damien (Hard)",
     "boss": "Damien",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -326,7 +326,7 @@
     "hpLabel": null
    },
    {
-    "name": "Guardian Angel Slime",
+    "name": "Guardian Angel Slime (Chaos)",
     "boss": "Guardian Angel Slime",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -341,7 +341,7 @@
     "hpLabel": null
    },
    {
-    "name": "Lucid",
+    "name": "Lucid (Hard)",
     "boss": "Lucid",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -358,7 +358,7 @@
     "hpLabel": null
    },
    {
-    "name": "Will",
+    "name": "Will (Hard)",
     "boss": "Will",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -375,7 +375,7 @@
     "hpLabel": null
    },
    {
-    "name": "Gloom",
+    "name": "Gloom (Chaos)",
     "boss": "Gloom",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -390,7 +390,7 @@
     "hpLabel": null
    },
    {
-    "name": "Verus Hilla",
+    "name": "Verus Hilla (Hard)",
     "boss": "Verus Hilla",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -405,7 +405,7 @@
     "hpLabel": null
    },
    {
-    "name": "Malicia",
+    "name": "Malicia (Normal)",
     "boss": "Malicia",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -423,7 +423,7 @@
     "hpLabel": null
    },
    {
-    "name": "Darknell",
+    "name": "Darknell (Hard)",
     "boss": "Darknell",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -438,7 +438,7 @@
     "hpLabel": null
    },
    {
-    "name": "Black Mage",
+    "name": "Black Mage (Hard)",
     "boss": "Black Mage",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -456,7 +456,7 @@
     "hpLabel": null
    },
    {
-    "name": "Chosen Seren",
+    "name": "Chosen Seren (Hard)",
     "boss": "Chosen Seren",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -472,7 +472,7 @@
     "hpLabel": null
    },
    {
-    "name": "Kalos",
+    "name": "Kalos (Chaos)",
     "boss": "Kalos",
     "difficulty": "Chaos",
     "world": "Grandis",
@@ -488,7 +488,7 @@
     "hpLabel": null
    },
    {
-    "name": "First Adversary",
+    "name": "First Adversary (Hard)",
     "boss": "First Adversary",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -505,7 +505,7 @@
     "hpLabel": null
    },
    {
-    "name": "Kaling",
+    "name": "Kaling (Hard)",
     "boss": "Kaling",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -522,7 +522,7 @@
     "hpLabel": null
    },
    {
-    "name": "Malefic Star",
+    "name": "Malefic Star (Hard)",
     "boss": "Malefic Star",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -537,7 +537,7 @@
     "hpLabel": null
    },
    {
-    "name": "Bellona",
+    "name": "Bellona (Hard)",
     "boss": "Bellona",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -553,7 +553,7 @@
     "hpLabel": null
    },
    {
-    "name": "Limbo",
+    "name": "Limbo (Hard)",
     "boss": "Limbo",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -570,7 +570,7 @@
     "hpLabel": null
    },
    {
-    "name": "Baldrix",
+    "name": "Baldrix (Hard)",
     "boss": "Baldrix",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -587,7 +587,7 @@
     "hpLabel": null
    },
    {
-    "name": "Jupiter",
+    "name": "Jupiter (Hard)",
     "boss": "Jupiter",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -602,7 +602,7 @@
     "hpLabel": null
    },
    {
-    "name": "Kai",
+    "name": "Kai (Hard)",
     "boss": "Kai",
     "difficulty": "Hard",
     "world": "Other",
@@ -618,7 +618,7 @@
     "hpLabel": null
    },
    {
-    "name": "Meilin",
+    "name": "Meilin (Hard)",
     "boss": "Meilin",
     "difficulty": "Hard",
     "world": "Other",
@@ -636,7 +636,7 @@
   ],
   "hard": [
    {
-    "name": "Zakum",
+    "name": "Zakum (Chaos)",
     "boss": "Zakum",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -652,7 +652,7 @@
     "hpLabel": null
    },
    {
-    "name": "Papulatus",
+    "name": "Papulatus (Chaos)",
     "boss": "Papulatus",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -668,7 +668,7 @@
     "hpLabel": null
    },
    {
-    "name": "Magnus",
+    "name": "Magnus (Hard)",
     "boss": "Magnus",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -683,7 +683,7 @@
     "hpLabel": null
    },
    {
-    "name": "Hilla",
+    "name": "Hilla (Hard)",
     "boss": "Hilla",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -698,7 +698,7 @@
     "hpLabel": null
    },
    {
-    "name": "Mori Ranmaru",
+    "name": "Mori Ranmaru (Hard)",
     "boss": "Mori Ranmaru",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -713,7 +713,7 @@
     "hpLabel": null
    },
    {
-    "name": "Horntail",
+    "name": "Horntail (Chaos)",
     "boss": "Horntail",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -730,7 +730,7 @@
     "hpLabel": null
    },
    {
-    "name": "Pierre",
+    "name": "Pierre (Chaos)",
     "boss": "Pierre",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -745,7 +745,7 @@
     "hpLabel": null
    },
    {
-    "name": "Von Bon",
+    "name": "Von Bon (Chaos)",
     "boss": "Von Bon",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -760,7 +760,7 @@
     "hpLabel": null
    },
    {
-    "name": "Crimson Queen",
+    "name": "Crimson Queen (Chaos)",
     "boss": "Crimson Queen",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -775,7 +775,7 @@
     "hpLabel": null
    },
    {
-    "name": "Vellum",
+    "name": "Vellum (Chaos)",
     "boss": "Vellum",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -790,7 +790,7 @@
     "hpLabel": null
    },
    {
-    "name": "Von Leon",
+    "name": "Von Leon (Hard)",
     "boss": "Von Leon",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -805,7 +805,7 @@
     "hpLabel": null
    },
    {
-    "name": "Arkarium",
+    "name": "Arkarium (Normal)",
     "boss": "Arkarium",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -820,7 +820,7 @@
     "hpLabel": null
    },
    {
-    "name": "Gollux",
+    "name": "Gollux (Hell)",
     "boss": "Gollux",
     "difficulty": "Hell",
     "world": "Masteria",
@@ -837,7 +837,7 @@
     "hpLabel": null
    },
    {
-    "name": "OMNI-CLN",
+    "name": "OMNI-CLN (Normal)",
     "boss": "OMNI-CLN",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -852,7 +852,7 @@
     "hpLabel": null
    },
    {
-    "name": "Pink Bean",
+    "name": "Pink Bean (Chaos)",
     "boss": "Pink Bean",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -869,7 +869,7 @@
     "hpLabel": null
    },
    {
-    "name": "Cygnus",
+    "name": "Cygnus (Normal)",
     "boss": "Cygnus",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -884,7 +884,7 @@
     "hpLabel": null
    },
    {
-    "name": "Princess No",
+    "name": "Princess No (Normal)",
     "boss": "Princess No",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -899,7 +899,7 @@
     "hpLabel": null
    },
    {
-    "name": "Akechi Mitsuhide",
+    "name": "Akechi Mitsuhide (Normal)",
     "boss": "Akechi Mitsuhide",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -915,7 +915,7 @@
     "hpLabel": null
    },
    {
-    "name": "Lotus",
+    "name": "Lotus (Hard)",
     "boss": "Lotus",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -932,7 +932,7 @@
     "hpLabel": null
    },
    {
-    "name": "Damien",
+    "name": "Damien (Hard)",
     "boss": "Damien",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -948,7 +948,7 @@
     "hpLabel": null
    },
    {
-    "name": "Guardian Angel Slime",
+    "name": "Guardian Angel Slime (Chaos)",
     "boss": "Guardian Angel Slime",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -963,7 +963,7 @@
     "hpLabel": null
    },
    {
-    "name": "Lucid",
+    "name": "Lucid (Hard)",
     "boss": "Lucid",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -980,7 +980,7 @@
     "hpLabel": null
    },
    {
-    "name": "Will",
+    "name": "Will (Hard)",
     "boss": "Will",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -997,7 +997,7 @@
     "hpLabel": null
    },
    {
-    "name": "Gloom",
+    "name": "Gloom (Chaos)",
     "boss": "Gloom",
     "difficulty": "Chaos",
     "world": "Maple World",
@@ -1012,7 +1012,7 @@
     "hpLabel": null
    },
    {
-    "name": "Verus Hilla",
+    "name": "Verus Hilla (Hard)",
     "boss": "Verus Hilla",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -1027,7 +1027,7 @@
     "hpLabel": null
    },
    {
-    "name": "Malicia",
+    "name": "Malicia (Normal)",
     "boss": "Malicia",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -1045,7 +1045,7 @@
     "hpLabel": null
    },
    {
-    "name": "Darknell",
+    "name": "Darknell (Hard)",
     "boss": "Darknell",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -1060,7 +1060,7 @@
     "hpLabel": null
    },
    {
-    "name": "Black Mage",
+    "name": "Black Mage (Hard)",
     "boss": "Black Mage",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -1078,7 +1078,7 @@
     "hpLabel": null
    },
    {
-    "name": "Chosen Seren",
+    "name": "Chosen Seren (Hard)",
     "boss": "Chosen Seren",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -1094,7 +1094,7 @@
     "hpLabel": null
    },
    {
-    "name": "Kalos",
+    "name": "Kalos (Chaos)",
     "boss": "Kalos",
     "difficulty": "Chaos",
     "world": "Grandis",
@@ -1110,7 +1110,7 @@
     "hpLabel": null
    },
    {
-    "name": "First Adversary",
+    "name": "First Adversary (Hard)",
     "boss": "First Adversary",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -1127,7 +1127,7 @@
     "hpLabel": null
    },
    {
-    "name": "Kaling",
+    "name": "Kaling (Hard)",
     "boss": "Kaling",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -1144,7 +1144,7 @@
     "hpLabel": null
    },
    {
-    "name": "Malefic Star",
+    "name": "Malefic Star (Hard)",
     "boss": "Malefic Star",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -1159,7 +1159,7 @@
     "hpLabel": null
    },
    {
-    "name": "Bellona",
+    "name": "Bellona (Hard)",
     "boss": "Bellona",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -1175,7 +1175,7 @@
     "hpLabel": null
    },
    {
-    "name": "Limbo",
+    "name": "Limbo (Hard)",
     "boss": "Limbo",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -1192,7 +1192,7 @@
     "hpLabel": null
    },
    {
-    "name": "Baldrix",
+    "name": "Baldrix (Hard)",
     "boss": "Baldrix",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -1209,7 +1209,7 @@
     "hpLabel": null
    },
    {
-    "name": "Jupiter",
+    "name": "Jupiter (Hard)",
     "boss": "Jupiter",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -1224,7 +1224,7 @@
     "hpLabel": null
    },
    {
-    "name": "Kai",
+    "name": "Kai (Hard)",
     "boss": "Kai",
     "difficulty": "Hard",
     "world": "Other",
@@ -1240,7 +1240,7 @@
     "hpLabel": null
    },
    {
-    "name": "Meilin",
+    "name": "Meilin (Hard)",
     "boss": "Meilin",
     "difficulty": "Hard",
     "world": "Other",
@@ -1256,7 +1256,7 @@
     "hpLabel": null
    },
    {
-    "name": "Balrog",
+    "name": "Balrog (Easy)",
     "boss": "Balrog",
     "difficulty": "Easy",
     "world": "Maple World",
@@ -1271,7 +1271,7 @@
     "hpLabel": null
    },
    {
-    "name": "Ursus",
+    "name": "Ursus (Normal)",
     "boss": "Ursus",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -1286,7 +1286,7 @@
     "hpLabel": null
    },
    {
-    "name": "Yakuza Boss",
+    "name": "Yakuza Boss (Normal)",
     "boss": "Yakuza Boss",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -1301,7 +1301,7 @@
     "hpLabel": null
    },
    {
-    "name": "Frenzied Gigatoad",
+    "name": "Frenzied Gigatoad (Hard)",
     "boss": "Frenzied Gigatoad",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -1316,7 +1316,7 @@
     "hpLabel": null
    },
    {
-    "name": "Extreme Bigfoot",
+    "name": "Extreme Bigfoot (Normal)",
     "boss": "Extreme Bigfoot",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -1848,7 +1848,7 @@
     "hpLabel": null
    },
    {
-    "name": "OMNI-CLN",
+    "name": "OMNI-CLN (Normal)",
     "boss": "OMNI-CLN",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -1925,7 +1925,7 @@
     "hpLabel": null
    },
    {
-    "name": "Princess No",
+    "name": "Princess No (Normal)",
     "boss": "Princess No",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -1940,7 +1940,7 @@
     "hpLabel": null
    },
    {
-    "name": "Akechi Mitsuhide",
+    "name": "Akechi Mitsuhide (Normal)",
     "boss": "Akechi Mitsuhide",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -2816,7 +2816,7 @@
     "hpLabel": null
    },
    {
-    "name": "Balrog",
+    "name": "Balrog (Easy)",
     "boss": "Balrog",
     "difficulty": "Easy",
     "world": "Maple World",
@@ -2831,7 +2831,7 @@
     "hpLabel": null
    },
    {
-    "name": "Ursus",
+    "name": "Ursus (Normal)",
     "boss": "Ursus",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -2846,7 +2846,7 @@
     "hpLabel": null
    },
    {
-    "name": "Yakuza Boss",
+    "name": "Yakuza Boss (Normal)",
     "boss": "Yakuza Boss",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -2861,7 +2861,7 @@
     "hpLabel": null
    },
    {
-    "name": "Frenzied Gigatoad",
+    "name": "Frenzied Gigatoad (Hard)",
     "boss": "Frenzied Gigatoad",
     "difficulty": "Hard",
     "world": "Maple World",
@@ -2876,7 +2876,7 @@
     "hpLabel": null
    },
    {
-    "name": "Extreme Bigfoot",
+    "name": "Extreme Bigfoot (Normal)",
     "boss": "Extreme Bigfoot",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -2891,7 +2891,7 @@
     "hpLabel": null
    },
    {
-    "name": "Reina",
+    "name": "Reina (Normal)",
     "boss": "Reina",
     "difficulty": "Normal",
     "world": "Grandis",
@@ -2906,7 +2906,7 @@
     "hpLabel": null
    },
    {
-    "name": "Julieta",
+    "name": "Julieta (Normal)",
     "boss": "Julieta",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -2919,7 +2919,7 @@
     "hpLabel": null
    },
    {
-    "name": "Cross",
+    "name": "Cross (Normal)",
     "boss": "Cross",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -2932,7 +2932,7 @@
     "hpLabel": null
    },
    {
-    "name": "Normal Inferno Wolf",
+    "name": "Normal Inferno Wolf (Normal)",
     "boss": "Normal Inferno Wolf",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -2947,7 +2947,7 @@
     "hpLabel": null
    },
    {
-    "name": "Chaos Inferno Wolf",
+    "name": "Chaos Inferno Wolf (Normal)",
     "boss": "Chaos Inferno Wolf",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -2962,7 +2962,7 @@
     "hpLabel": null
    },
    {
-    "name": "Extreme Inferno Wolf",
+    "name": "Extreme Inferno Wolf (Normal)",
     "boss": "Extreme Inferno Wolf",
     "difficulty": "Normal",
     "world": "Maple World",
@@ -2977,7 +2977,7 @@
     "hpLabel": null
    },
    {
-    "name": "Aufheben",
+    "name": "Aufheben (Normal)",
     "boss": "Aufheben",
     "difficulty": "Normal",
     "world": "Other",
@@ -2990,7 +2990,7 @@
     "hpLabel": null
    },
    {
-    "name": "Tweentona",
+    "name": "Tweentona (Normal)",
     "boss": "Tweentona",
     "difficulty": "Normal",
     "world": "Other",
@@ -3003,7 +3003,7 @@
     "hpLabel": null
    },
    {
-    "name": "Gerand Darmoor",
+    "name": "Gerand Darmoor (Hard)",
     "boss": "Gerand Darmoor",
     "difficulty": "Hard",
     "world": "Grandis",
@@ -3016,7 +3016,7 @@
     "hpLabel": null
    },
    {
-    "name": "Havoc",
+    "name": "Havoc (Hard)",
     "boss": "Havoc",
     "difficulty": "Hard",
     "world": "Grandis",
