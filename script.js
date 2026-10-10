@@ -23,14 +23,40 @@ function dailyIndex(mode, size) {
 
 function textCell(g, a) {
   const show = g == null ? 'Unknown' : g;
-  return [show, g != null && g === a ? 'green' : 'grey'];
+  return [show, g != null && g === a ? 'green' : 'red'];
 }
 
-function numberCell(g, a, show) {
+// "All", "All except KMS", "GMS only", "JMS/CMS/GMS" -> set of servers.
+// Labels that aren't server lists (Seasonal, Event, Removed) return null.
+const SERVERS = ['KMS', 'GMS', 'JMS', 'CMS', 'TMS', 'MSEA'];
+function servers(label) {
+  if (label == null) return null;
+  if (label === 'All') return SERVERS;
+  let m = label.match(/^All except (.+)$/);
+  if (m) return SERVERS.filter((s) => s !== m[1]);
+  m = label.match(/^(\w+) only$/);
+  if (m) return [m[1]];
+  const parts = label.split('/');
+  return parts.every((p) => SERVERS.includes(p)) ? parts : null;
+}
+
+function regionCell(g, a) {
+  const show = g == null ? 'Unknown' : g;
+  if (g != null && g === a) return [show, 'green'];
+  const gs = servers(g), as = servers(a);
+  if (gs && as && gs.some((s) => as.includes(s))) return [show, 'yellow'];
+  return [show, 'red'];
+}
+
+// Yellow when close, red when far. close(g, a) decides what "close" means per column.
+function numberCell(g, a, show, close) {
   if (g == null || a == null) return [show, 'red'];
   if (g === a) return [show, 'green'];
-  return [show + (g < a ? ' ↑' : ' ↓'), 'grey'];
+  return [show + (g < a ? ' ↑' : ' ↓'), close(g, a) ? 'yellow' : 'red'];
 }
+const closePhases = (g, a) => Math.abs(g - a) <= 1;
+const closeHp = (g, a) => Math.max(g, a) / Math.min(g, a) <= 3;
+const closeLevel = (g, a) => Math.abs(g - a) <= 10;
 
 function start() {
   const mode = $('mode').value;
@@ -60,13 +86,13 @@ function guess() {
   $('guess').value = '';
 
   const cells = [
-    [g.name, g.name === answer.name ? 'green' : 'grey'],
+    [g.name, g.name === answer.name ? 'green' : 'red'],
     textCell(g.world, answer.world),
     textCell(g.gender, answer.gender),
-    textCell(g.region, answer.region),
-    numberCell(g.phases, answer.phases, g.phases ?? 'Unknown'),
-    numberCell(g.hp, answer.hp, formatHp(g)),
-    numberCell(g.level, answer.level, g.level ?? 'Unknown'),
+    regionCell(g.region, answer.region),
+    numberCell(g.phases, answer.phases, g.phases ?? 'Unknown', closePhases),
+    numberCell(g.hp, answer.hp, formatHp(g), closeHp),
+    numberCell(g.level, answer.level, g.level ?? 'Unknown', closeLevel),
   ];
   const tr = document.createElement('tr');
   for (const [text, cls] of cells) {
