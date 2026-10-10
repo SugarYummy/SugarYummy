@@ -10,8 +10,9 @@
   .panel { background: rgba(255, 255, 255, 0.55); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
            border-radius: 12px; padding: 8px 16px 16px; margin: 16px; max-width: calc(100% - 64px); }
   .table-wrap { overflow-x: auto; }
-  footer.panel { margin: auto 16px 16px; padding: 8px 16px; }
-  .game { position: relative; z-index: 2; }
+  footer.panel { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); z-index: 1; margin: 0;
+                 padding: 6px 16px; border-radius: 12px 12px 0 0; font-size: 14px; white-space: nowrap; }
+  .game { position: relative; z-index: 2; margin-bottom: 80px; }
   th { background: rgba(255, 255, 255, 0.6); }
   td, th { border: 1px solid #999; padding: 4px 8px; }
   table { border-collapse: collapse; margin: 8px auto; }
