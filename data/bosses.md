@@ -27,13 +27,13 @@ Generated from `bosses.json`. Unknown = no data found. HP units: M = million, B 
 | Lotus (Hard) | Hard | Maple World | Male | All | 3 | 33.285T | 190 |
 | Damien (Hard) | Hard | Maple World | Male | All | 2 | 36T | 190 |
 | Guardian Angel Slime (Chaos) | Chaos | Maple World | Other | All | 1 | 90T | 210 |
-| Lucid (Hard) | Hard | Maple World | Female | All | 3 | 117.6T | 220 |
-| Will (Hard) | Hard | Maple World | Male | All | 3 | 126T | 235 |
-| Gloom (Chaos) | Chaos | Maple World | Other | All | 1 | 127.05T | 245 |
-| Verus Hilla (Hard) | Hard | Maple World | Female | All | 1 | 178.5T | 250 |
+| Lucid (Hard) | Hard | Arcane River | Female | All | 3 | 117.6T | 220 |
+| Will (Hard) | Hard | Arcane River | Male | All | 3 | 126T | 235 |
+| Gloom (Chaos) | Chaos | Arcane River | Other | All | 1 | 127.05T | 245 |
+| Verus Hilla (Hard) | Hard | Arcane River | Female | All | 1 | 178.5T | 250 |
 | Malicia (Normal) | Normal | Maple World | Female | JMS/CMS/TMS | 4 | 178T | 250 |
-| Darknell (Hard) | Hard | Maple World | Male | All | 1 | 157.5T | 255 |
-| Black Mage (Hard) | Hard | Maple World | Male | All | 4 | 472.5T | 255 |
+| Darknell (Hard) | Hard | Arcane River | Male | All | 1 | 157.5T | 255 |
+| Black Mage (Hard) | Hard | Arcane River | Male | All | 4 | 472.5T | 255 |
 | Chosen Seren (Hard) | Hard | Grandis | Female | All | 2 | 483T | 260 |
 | Kalos (Chaos) | Chaos | Grandis | Male | All | 2 | 5.126Q | 265 |
 | First Adversary (Hard) | Hard | Grandis | Male | All | 3 | 10.45Q | 270 |
@@ -109,22 +109,22 @@ Only the extras are shown; the Normal pool is included too.
 | Damien (Hard) | Hard | Maple World | Male | All | 2 | 36T | 190 |
 | Guardian Angel Slime (Normal) | Normal | Maple World | Other | All | 1 | 5T | 210 |
 | Guardian Angel Slime (Chaos) | Chaos | Maple World | Other | All | 1 | 90T | 210 |
-| Lucid (Easy) | Easy | Maple World | Female | All | 2 | 12T | 220 |
-| Lucid (Normal) | Normal | Maple World | Female | All | 2 | 24T | 220 |
-| Lucid (Hard) | Hard | Maple World | Female | All | 3 | 117.6T | 220 |
-| Will (Easy) | Easy | Maple World | Male | All | 3 | 16.8T | 235 |
-| Will (Normal) | Normal | Maple World | Male | All | 3 | 25.2T | 235 |
-| Will (Hard) | Hard | Maple World | Male | All | 3 | 126T | 235 |
-| Gloom (Normal) | Normal | Maple World | Other | All | 1 | 25.41T | 245 |
-| Gloom (Chaos) | Chaos | Maple World | Other | All | 1 | 127.05T | 245 |
-| Verus Hilla (Normal) | Normal | Maple World | Female | All | 1 | 89.25T | 250 |
-| Verus Hilla (Hard) | Hard | Maple World | Female | All | 1 | 178.5T | 250 |
+| Lucid (Easy) | Easy | Arcane River | Female | All | 2 | 12T | 220 |
+| Lucid (Normal) | Normal | Arcane River | Female | All | 2 | 24T | 220 |
+| Lucid (Hard) | Hard | Arcane River | Female | All | 3 | 117.6T | 220 |
+| Will (Easy) | Easy | Arcane River | Male | All | 3 | 16.8T | 235 |
+| Will (Normal) | Normal | Arcane River | Male | All | 3 | 25.2T | 235 |
+| Will (Hard) | Hard | Arcane River | Male | All | 3 | 126T | 235 |
+| Gloom (Normal) | Normal | Arcane River | Other | All | 1 | 25.41T | 245 |
+| Gloom (Chaos) | Chaos | Arcane River | Other | All | 1 | 127.05T | 245 |
+| Verus Hilla (Normal) | Normal | Arcane River | Female | All | 1 | 89.25T | 250 |
+| Verus Hilla (Hard) | Hard | Arcane River | Female | All | 1 | 178.5T | 250 |
 | Malicia (Normal) | Normal | Maple World | Female | JMS/CMS/TMS | 4 | 178T | 250 |
 | Malicia (Extreme) | Extreme | Maple World | Female | JMS/CMS/TMS | 4 | 300Q+ | 250 |
-| Darknell (Normal) | Normal | Maple World | Male | All | 1 | 26.25T | 255 |
-| Darknell (Hard) | Hard | Maple World | Male | All | 1 | 157.5T | 255 |
-| Black Mage (Hard) | Hard | Maple World | Male | All | 4 | 472.5T | 255 |
-| Black Mage (Extreme) | Extreme | Maple World | Male | All | 4 | 4.811Q | 255 |
+| Darknell (Normal) | Normal | Arcane River | Male | All | 1 | 26.25T | 255 |
+| Darknell (Hard) | Hard | Arcane River | Male | All | 1 | 157.5T | 255 |
+| Black Mage (Hard) | Hard | Arcane River | Male | All | 4 | 472.5T | 255 |
+| Black Mage (Extreme) | Extreme | Arcane River | Male | All | 4 | 4.811Q | 255 |
 | Chosen Seren (Normal) | Normal | Grandis | Female | All | 2 | 207.9T | 260 |
 | Chosen Seren (Hard) | Hard | Grandis | Female | All | 2 | 483T | 260 |
 | Chosen Seren (Extreme) | Extreme | Grandis | Female | All | 2 | 6.48Q | 260 |
