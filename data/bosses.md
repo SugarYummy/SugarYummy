@@ -1,6 +1,6 @@
 # Maple Wordle - boss data review
 
-Generated from `bosses.json`. ??? = unknown. HP units: M = million, B = billion, T = trillion, Q = quadrillion.
+Generated from `bosses.json`. Unknown = no data found. HP units: M = million, B = billion, T = trillion, Q = quadrillion.
 
 ## Normal / Story pool - 39 entries
 
@@ -10,7 +10,7 @@ Generated from `bosses.json`. ??? = unknown. HP units: M = million, B = billion,
 | Papulatus | Chaos | Maple World | Other | All | 2 | 504B | 190 |
 | Magnus | Hard | Grandis | Male | All | 1 | 120B | 175 |
 | Hilla | Hard | Maple World | Female | All | 1 | 16.8B | 170 |
-| Mori Ranmaru | Hard | Maple World | Male | All except KMS | 1 | 84B | 180 |
+| Mori Ranmaru | Hard | Maple World | Male | All except KMS | 1 | 2.1B | 180 |
 | Horntail | Chaos | Maple World | Other | All | 3 | 26.6B | 135 |
 | Pierre | Chaos | Maple World | Male | All | 1 | 80B | 180 |
 | Von Bon | Chaos | Maple World | Male | All | 1 | 100B | 180 |
@@ -55,7 +55,7 @@ Only the extras are shown; the Normal pool is included too.
 | Balrog | Easy | Maple World | Male | All | 1 | 4.788M | 65 |
 | Ursus | Normal | Maple World | Other | GMS only | 1 | 2.625T | 100 |
 | Yakuza Boss | Normal | Maple World | Male | All | 1 | 1B | 160 |
-| Frenzied Gigatoad | Hard | Maple World | Other | All | 1 | 1.7B | 170 |
+| Frenzied Gigatoad | Hard | Maple World | Other | All | 1 | 900M | 170 |
 | Extreme Bigfoot | Normal | Maple World | Other | All | 1 | 15T | 260 |
 
 ## Extreme pool (every difficulty + extras) - 108 entries
@@ -74,7 +74,7 @@ Only the extras are shown; the Normal pool is included too.
 | Hilla (Normal) | Normal | Maple World | Female | All | 1 | 500M | 85 |
 | Hilla (Hard) | Hard | Maple World | Female | All | 1 | 16.8B | 170 |
 | Mori Ranmaru (Normal) | Normal | Maple World | Male | All except KMS | 1 | 1B | 120 |
-| Mori Ranmaru (Hard) | Hard | Maple World | Male | All except KMS | 1 | 84B | 180 |
+| Mori Ranmaru (Hard) | Hard | Maple World | Male | All except KMS | 1 | 2.1B | 180 |
 | Horntail (Easy) | Easy | Maple World | Other | All | 3 | 1.018B | 130 |
 | Horntail (Normal) | Normal | Maple World | Other | All | 3 | 2.75B | 130 |
 | Horntail (Chaos) | Chaos | Maple World | Other | All | 3 | 26.6B | 135 |
@@ -158,26 +158,26 @@ Only the extras are shown; the Normal pool is included too.
 | Balrog | Easy | Maple World | Male | All | 1 | 4.788M | 65 |
 | Ursus | Normal | Maple World | Other | GMS only | 1 | 2.625T | 100 |
 | Yakuza Boss | Normal | Maple World | Male | All | 1 | 1B | 160 |
-| Frenzied Gigatoad | Hard | Maple World | Other | All | 1 | 1.7B | 170 |
+| Frenzied Gigatoad | Hard | Maple World | Other | All | 1 | 900M | 170 |
 | Extreme Bigfoot | Normal | Maple World | Other | All | 1 | 15T | 260 |
 | Reina | Normal | Grandis | Female | All | 1 | 2.1B | 280 |
-| Julieta | Normal | Maple World | Female | Removed | ??? | ??? | ??? |
-| Cross | Normal | Maple World | Male | Removed | ??? | ??? | ??? |
+| Julieta | Normal | Maple World | Female | Removed | Unknown | Unknown | Unknown |
+| Cross | Normal | Maple World | Male | Removed | Unknown | Unknown | Unknown |
 | Normal Inferno Wolf | Normal | Maple World | Other | Removed | 1 | 10B | 10 |
 | Chaos Inferno Wolf | Normal | Maple World | Other | Removed | 1 | 20T | 200 |
 | Extreme Inferno Wolf | Normal | Maple World | Other | Removed | 1 | 100T | 260 |
-| Aufheben | Normal | Other | Female | Event | ??? | ??? | ??? |
-| Tweentona | Normal | Other | Other | Event | ??? | ??? | ??? |
-| Gerand Darmoor | Hard | Grandis | Male | ??? | ??? | ??? | ??? |
-| Havoc | Hard | Grandis | Male | ??? | ??? | ??? | ??? |
+| Aufheben | Normal | Other | Female | Event | Unknown | Unknown | Unknown |
+| Tweentona | Normal | Other | Other | Event | Unknown | Unknown | Unknown |
+| Gerand Darmoor | Hard | Grandis | Male | Unknown | Unknown | Unknown | Unknown |
+| Havoc | Hard | Grandis | Male | Unknown | Unknown | Unknown | Unknown |
 
 ## Notes
 
 - **Zakum**: Phase 1 = 8 arms, Phase 2 = body
-- **Mori Ranmaru**: Hard HP is 2.1B in GMS
+- **Mori Ranmaru**: GMS HP (other servers: 84B)
 - **Horntail**: Phase 3 = all 8 body parts
-- **Vellum**: Chaos HP is 120B in MSEA
-- **Gollux**: HP = 3 Head phases only. Wiki only lists the 180+ requirement, so every mode uses 180
+- **Vellum**: GMS HP (MSEA: 120B)
+- **Gollux**: GMS HP, 3 Head phases only. Wiki only lists the 180+ requirement, so every mode uses 180
 - **Cygnus**: Removed from KMS in the Overdrive update
 - **Malicia**: Normal HP from Bahamut (TMS) boss HP table, Jul 2026: P1 49T + inner world 21T, P2 56T, P3 24T, P4 28T. Extreme: known phases total ~149.7Q but Phase 4 is unknown, so shown as 300Q+
 - **Kaling**: P1 = 3 perils, P2 = Kaling, P3 = 3 perils + Frenzied Kaling
@@ -186,7 +186,7 @@ Only the extras are shown; the Normal pool is included too.
 - **Meilin**: Challenger World Season 4 boss. One HP bar; form/map change at 50% HP is not counted as a new phase
 - **Balrog**: Only Easy mode exists; HP = body + 2 extra parts
 - **Yakuza Boss**: Entry level = Showa Town quest requirement
-- **Frenzied Gigatoad**: HP is 900M in GMS; entry level = Ninja Castle requirement
+- **Frenzied Gigatoad**: GMS HP (other servers: 1.7B); entry level = Ninja Castle requirement
 - **Extreme Bigfoot**: Monster Park Extreme (260+)
 - **Reina**: Arteria quest boss; entry level = Arteria requirement
 - **Julieta**: Removed (Monad). No HP/level/phases on any wiki

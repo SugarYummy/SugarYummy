@@ -1,10 +1,15 @@
 {
- "_about": "Boss data for Maple Wordle. Sources: maplestorywiki.net, Namu Wiki, Bahamut TMS HP table (Oct 2026). Normal/Hard modes use each boss's hardest non-Extreme mode (Hard > Chaos > Normal > Easy; Gollux = Hell). Extreme mode lists every difficulty as its own entry. hp = sum of all phase HP. level = entry level. Story mode uses the normal pool with unlimited guesses. null = unknown (shown as ???); hpLabel overrides the HP display (e.g. 300Q+).",
+ "_about": "Boss data for Maple Wordle. Sources: maplestorywiki.net, Namu Wiki, Bahamut TMS HP table (Oct 2026). Normal/Hard modes use each boss's hardest non-Extreme mode (Hard > Chaos > Normal > Easy; Gollux = Hell). Extreme mode lists every difficulty as its own entry. hp = sum of all phase HP. level = entry level. Story mode uses the normal pool with unlimited guesses. null = Unknown; hpLabel overrides the HP display (e.g. 300Q+).",
  "attempts": {
   "story": null,
   "normal": 6,
   "hard": 5,
   "extreme": 5
+ },
+ "rules": {
+  "numbers": "Phases, HP and Entry Lv: green if equal, otherwise an arrow pointing toward the answer. If the guess or the answer is Unknown, the tile is red with no arrow.",
+  "text": "World, Gender, Region: green if equal, otherwise grey.",
+  "hpValues": "GMS values are used wherever servers differ."
  },
  "pools": {
   "normal": [
@@ -78,9 +83,9 @@
     "gender": "Male",
     "region": "All except KMS",
     "phases": 1,
-    "hp": 84000000000,
+    "hp": 2100000000,
     "phaseHp": [
-     84000000000
+     2100000000
     ],
     "level": 180,
     "hpLabel": null
@@ -700,9 +705,9 @@
     "gender": "Male",
     "region": "All except KMS",
     "phases": 1,
-    "hp": 84000000000,
+    "hp": 2100000000,
     "phaseHp": [
-     84000000000
+     2100000000
     ],
     "level": 180,
     "hpLabel": null
@@ -1303,9 +1308,9 @@
     "gender": "Other",
     "region": "All",
     "phases": 1,
-    "hp": 1700000000,
+    "hp": 900000000,
     "phaseHp": [
-     1700000000
+     900000000
     ],
     "level": 170,
     "hpLabel": null
@@ -1521,9 +1526,9 @@
     "gender": "Male",
     "region": "All except KMS",
     "phases": 1,
-    "hp": 84000000000,
+    "hp": 2100000000,
     "phaseHp": [
-     84000000000
+     2100000000
     ],
     "level": 180,
     "hpLabel": null
@@ -2863,9 +2868,9 @@
     "gender": "Other",
     "region": "All",
     "phases": 1,
-    "hp": 1700000000,
+    "hp": 900000000,
     "phaseHp": [
-     1700000000
+     900000000
     ],
     "level": 170,
     "hpLabel": null
@@ -3027,10 +3032,10 @@
  },
  "notes": {
   "Zakum": "Phase 1 = 8 arms, Phase 2 = body",
-  "Mori Ranmaru": "Hard HP is 2.1B in GMS",
+  "Mori Ranmaru": "GMS HP (other servers: 84B)",
   "Horntail": "Phase 3 = all 8 body parts",
-  "Vellum": "Chaos HP is 120B in MSEA",
-  "Gollux": "HP = 3 Head phases only. Wiki only lists the 180+ requirement, so every mode uses 180",
+  "Vellum": "GMS HP (MSEA: 120B)",
+  "Gollux": "GMS HP, 3 Head phases only. Wiki only lists the 180+ requirement, so every mode uses 180",
   "Cygnus": "Removed from KMS in the Overdrive update",
   "Malicia": "Normal HP from Bahamut (TMS) boss HP table, Jul 2026: P1 49T + inner world 21T, P2 56T, P3 24T, P4 28T. Extreme: known phases total ~149.7Q but Phase 4 is unknown, so shown as 300Q+",
   "Kaling": "P1 = 3 perils, P2 = Kaling, P3 = 3 perils + Frenzied Kaling",
@@ -3039,7 +3044,7 @@
   "Meilin": "Challenger World Season 4 boss. One HP bar; form/map change at 50% HP is not counted as a new phase",
   "Balrog": "Only Easy mode exists; HP = body + 2 extra parts",
   "Yakuza Boss": "Entry level = Showa Town quest requirement",
-  "Frenzied Gigatoad": "HP is 900M in GMS; entry level = Ninja Castle requirement",
+  "Frenzied Gigatoad": "GMS HP (other servers: 1.7B); entry level = Ninja Castle requirement",
   "Extreme Bigfoot": "Monster Park Extreme (260+)",
   "Reina": "Arteria quest boss; entry level = Arteria requirement",
   "Julieta": "Removed (Monad). No HP/level/phases on any wiki",
