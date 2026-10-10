@@ -1,5 +1,5 @@
 {
- "_about": "Boss data for Maple Wordle. Source: maplestorywiki.net (Oct 2026). Normal/Hard modes use each boss's hardest non-Extreme mode (Hard > Chaos > Normal > Easy; Gollux = Hell). Extreme mode lists every difficulty as its own entry. hp = sum of all phase HP. level = entry level. Story mode uses the normal pool with unlimited guesses. null = still missing.",
+ "_about": "Boss data for Maple Wordle. Sources: maplestorywiki.net, Namu Wiki, Bahamut TMS HP table (Oct 2026). Normal/Hard modes use each boss's hardest non-Extreme mode (Hard > Chaos > Normal > Easy; Gollux = Hell). Extreme mode lists every difficulty as its own entry. hp = sum of all phase HP. level = entry level. Story mode uses the normal pool with unlimited guesses. null = unknown (shown as ???); hpLabel overrides the HP display (e.g. 300Q+).",
  "attempts": {
   "story": null,
   "normal": 6,
@@ -21,7 +21,8 @@
      84000000000,
      84000000000
     ],
-    "level": 90
+    "level": 90,
+    "hpLabel": null
    },
    {
     "name": "Papulatus",
@@ -36,7 +37,8 @@
      378000000000,
      126000000000
     ],
-    "level": 190
+    "level": 190,
+    "hpLabel": null
    },
    {
     "name": "Magnus",
@@ -50,7 +52,8 @@
     "phaseHp": [
      120000000000
     ],
-    "level": 175
+    "level": 175,
+    "hpLabel": null
    },
    {
     "name": "Hilla",
@@ -64,7 +67,8 @@
     "phaseHp": [
      16800000000
     ],
-    "level": 170
+    "level": 170,
+    "hpLabel": null
    },
    {
     "name": "Mori Ranmaru",
@@ -78,7 +82,8 @@
     "phaseHp": [
      84000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Horntail",
@@ -94,7 +99,8 @@
      3300000000,
      20000000000
     ],
-    "level": 135
+    "level": 135,
+    "hpLabel": null
    },
    {
     "name": "Pierre",
@@ -108,7 +114,8 @@
     "phaseHp": [
      80000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Von Bon",
@@ -122,7 +129,8 @@
     "phaseHp": [
      100000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Crimson Queen",
@@ -136,7 +144,8 @@
     "phaseHp": [
      140000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Vellum",
@@ -150,7 +159,8 @@
     "phaseHp": [
      200000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Von Leon",
@@ -164,7 +174,8 @@
     "phaseHp": [
      10500000000
     ],
-    "level": 125
+    "level": 125,
+    "hpLabel": null
    },
    {
     "name": "Arkarium",
@@ -178,7 +189,8 @@
     "phaseHp": [
      12600000000
     ],
-    "level": 140
+    "level": 140,
+    "hpLabel": null
    },
    {
     "name": "Gollux",
@@ -194,7 +206,8 @@
      350000000000,
      70000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "OMNI-CLN",
@@ -208,7 +221,8 @@
     "phaseHp": [
      1680000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Pink Bean",
@@ -224,7 +238,8 @@
      23100000000,
      33600000000
     ],
-    "level": 170
+    "level": 170,
+    "hpLabel": null
    },
    {
     "name": "Cygnus",
@@ -238,7 +253,8 @@
     "phaseHp": [
      63000000000
     ],
-    "level": 165
+    "level": 165,
+    "hpLabel": null
    },
    {
     "name": "Princess No",
@@ -252,7 +268,8 @@
     "phaseHp": [
      500000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Akechi Mitsuhide",
@@ -267,7 +284,8 @@
      350000000000,
      350000000000
     ],
-    "level": 200
+    "level": 200,
+    "hpLabel": null
    },
    {
     "name": "Lotus",
@@ -283,7 +301,8 @@
      9985500000000,
      13314000000000
     ],
-    "level": 190
+    "level": 190,
+    "hpLabel": null
    },
    {
     "name": "Damien",
@@ -298,7 +317,8 @@
      25200000000000,
      10800000000000
     ],
-    "level": 190
+    "level": 190,
+    "hpLabel": null
    },
    {
     "name": "Guardian Angel Slime",
@@ -312,7 +332,8 @@
     "phaseHp": [
      90000000000000
     ],
-    "level": 210
+    "level": 210,
+    "hpLabel": null
    },
    {
     "name": "Lucid",
@@ -328,7 +349,8 @@
      54000000000000,
      12800000000000
     ],
-    "level": 220
+    "level": 220,
+    "hpLabel": null
    },
    {
     "name": "Will",
@@ -344,7 +366,8 @@
      31500000000000,
      52500000000000
     ],
-    "level": 235
+    "level": 235,
+    "hpLabel": null
    },
    {
     "name": "Gloom",
@@ -358,7 +381,8 @@
     "phaseHp": [
      127050000000000
     ],
-    "level": 245
+    "level": 245,
+    "hpLabel": null
    },
    {
     "name": "Verus Hilla",
@@ -372,7 +396,8 @@
     "phaseHp": [
      178500000000000
     ],
-    "level": 250
+    "level": 250,
+    "hpLabel": null
    },
    {
     "name": "Malicia",
@@ -382,14 +407,15 @@
     "gender": "Female",
     "region": "JMS/CMS/TMS",
     "phases": 4,
-    "hp": 96389999274668,
+    "hp": 178000000000000,
     "phaseHp": [
-     24097499818667,
-     24097499818667,
-     24097499818667,
-     24097499818667
+     70000000000000,
+     56000000000000,
+     24000000000000,
+     28000000000000
     ],
-    "level": 250
+    "level": 250,
+    "hpLabel": null
    },
    {
     "name": "Darknell",
@@ -403,7 +429,8 @@
     "phaseHp": [
      157500000000000
     ],
-    "level": 255
+    "level": 255,
+    "hpLabel": null
    },
    {
     "name": "Black Mage",
@@ -420,7 +447,8 @@
      157500000000000,
      136500000000000
     ],
-    "level": 255
+    "level": 255,
+    "hpLabel": null
    },
    {
     "name": "Chosen Seren",
@@ -435,7 +463,8 @@
      126000000000000,
      357000000000000
     ],
-    "level": 260
+    "level": 260,
+    "hpLabel": null
    },
    {
     "name": "Kalos",
@@ -450,7 +479,8 @@
      1066000000000000,
      4060000000000000
     ],
-    "level": 265
+    "level": 265,
+    "hpLabel": null
    },
    {
     "name": "First Adversary",
@@ -466,7 +496,8 @@
      3135000000000000,
      4180000000000000
     ],
-    "level": 270
+    "level": 270,
+    "hpLabel": null
    },
    {
     "name": "Kaling",
@@ -482,7 +513,8 @@
      1404000000000000,
      5259000000000000
     ],
-    "level": 275
+    "level": 275,
+    "hpLabel": null
    },
    {
     "name": "Malefic Star",
@@ -496,7 +528,8 @@
     "phaseHp": [
      14740000000000000
     ],
-    "level": 280
+    "level": 280,
+    "hpLabel": null
    },
    {
     "name": "Bellona",
@@ -511,7 +544,8 @@
      5564000000000000,
      8152000000000000
     ],
-    "level": 280
+    "level": 280,
+    "hpLabel": null
    },
    {
     "name": "Limbo",
@@ -527,7 +561,8 @@
      3774000000000000,
      4884000000000000
     ],
-    "level": 285
+    "level": 285,
+    "hpLabel": null
    },
    {
     "name": "Baldrix",
@@ -543,7 +578,8 @@
      5688000000000000,
      9072000000000000
     ],
-    "level": 290
+    "level": 290,
+    "hpLabel": null
    },
    {
     "name": "Jupiter",
@@ -557,7 +593,8 @@
     "phaseHp": [
      49400000000000000
     ],
-    "level": 295
+    "level": 295,
+    "hpLabel": null
    },
    {
     "name": "Kai",
@@ -572,19 +609,24 @@
      241500000000000,
      241500000000000
     ],
-    "level": 280
+    "level": 280,
+    "hpLabel": null
    },
    {
     "name": "Meilin",
     "boss": "Meilin",
-    "difficulty": null,
-    "world": null,
+    "difficulty": "Hard",
+    "world": "Other",
     "gender": null,
     "region": "Seasonal",
-    "phases": null,
-    "hp": null,
-    "phaseHp": null,
-    "level": null
+    "phases": 2,
+    "hp": 580000000000000,
+    "phaseHp": [
+     290000000000000,
+     290000000000000
+    ],
+    "level": 280,
+    "hpLabel": null
    }
   ],
   "hard": [
@@ -601,7 +643,8 @@
      84000000000,
      84000000000
     ],
-    "level": 90
+    "level": 90,
+    "hpLabel": null
    },
    {
     "name": "Papulatus",
@@ -616,7 +659,8 @@
      378000000000,
      126000000000
     ],
-    "level": 190
+    "level": 190,
+    "hpLabel": null
    },
    {
     "name": "Magnus",
@@ -630,7 +674,8 @@
     "phaseHp": [
      120000000000
     ],
-    "level": 175
+    "level": 175,
+    "hpLabel": null
    },
    {
     "name": "Hilla",
@@ -644,7 +689,8 @@
     "phaseHp": [
      16800000000
     ],
-    "level": 170
+    "level": 170,
+    "hpLabel": null
    },
    {
     "name": "Mori Ranmaru",
@@ -658,7 +704,8 @@
     "phaseHp": [
      84000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Horntail",
@@ -674,7 +721,8 @@
      3300000000,
      20000000000
     ],
-    "level": 135
+    "level": 135,
+    "hpLabel": null
    },
    {
     "name": "Pierre",
@@ -688,7 +736,8 @@
     "phaseHp": [
      80000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Von Bon",
@@ -702,7 +751,8 @@
     "phaseHp": [
      100000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Crimson Queen",
@@ -716,7 +766,8 @@
     "phaseHp": [
      140000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Vellum",
@@ -730,7 +781,8 @@
     "phaseHp": [
      200000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Von Leon",
@@ -744,7 +796,8 @@
     "phaseHp": [
      10500000000
     ],
-    "level": 125
+    "level": 125,
+    "hpLabel": null
    },
    {
     "name": "Arkarium",
@@ -758,7 +811,8 @@
     "phaseHp": [
      12600000000
     ],
-    "level": 140
+    "level": 140,
+    "hpLabel": null
    },
    {
     "name": "Gollux",
@@ -774,7 +828,8 @@
      350000000000,
      70000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "OMNI-CLN",
@@ -788,7 +843,8 @@
     "phaseHp": [
      1680000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Pink Bean",
@@ -804,7 +860,8 @@
      23100000000,
      33600000000
     ],
-    "level": 170
+    "level": 170,
+    "hpLabel": null
    },
    {
     "name": "Cygnus",
@@ -818,7 +875,8 @@
     "phaseHp": [
      63000000000
     ],
-    "level": 165
+    "level": 165,
+    "hpLabel": null
    },
    {
     "name": "Princess No",
@@ -832,7 +890,8 @@
     "phaseHp": [
      500000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Akechi Mitsuhide",
@@ -847,7 +906,8 @@
      350000000000,
      350000000000
     ],
-    "level": 200
+    "level": 200,
+    "hpLabel": null
    },
    {
     "name": "Lotus",
@@ -863,7 +923,8 @@
      9985500000000,
      13314000000000
     ],
-    "level": 190
+    "level": 190,
+    "hpLabel": null
    },
    {
     "name": "Damien",
@@ -878,7 +939,8 @@
      25200000000000,
      10800000000000
     ],
-    "level": 190
+    "level": 190,
+    "hpLabel": null
    },
    {
     "name": "Guardian Angel Slime",
@@ -892,7 +954,8 @@
     "phaseHp": [
      90000000000000
     ],
-    "level": 210
+    "level": 210,
+    "hpLabel": null
    },
    {
     "name": "Lucid",
@@ -908,7 +971,8 @@
      54000000000000,
      12800000000000
     ],
-    "level": 220
+    "level": 220,
+    "hpLabel": null
    },
    {
     "name": "Will",
@@ -924,7 +988,8 @@
      31500000000000,
      52500000000000
     ],
-    "level": 235
+    "level": 235,
+    "hpLabel": null
    },
    {
     "name": "Gloom",
@@ -938,7 +1003,8 @@
     "phaseHp": [
      127050000000000
     ],
-    "level": 245
+    "level": 245,
+    "hpLabel": null
    },
    {
     "name": "Verus Hilla",
@@ -952,7 +1018,8 @@
     "phaseHp": [
      178500000000000
     ],
-    "level": 250
+    "level": 250,
+    "hpLabel": null
    },
    {
     "name": "Malicia",
@@ -962,14 +1029,15 @@
     "gender": "Female",
     "region": "JMS/CMS/TMS",
     "phases": 4,
-    "hp": 96389999274668,
+    "hp": 178000000000000,
     "phaseHp": [
-     24097499818667,
-     24097499818667,
-     24097499818667,
-     24097499818667
+     70000000000000,
+     56000000000000,
+     24000000000000,
+     28000000000000
     ],
-    "level": 250
+    "level": 250,
+    "hpLabel": null
    },
    {
     "name": "Darknell",
@@ -983,7 +1051,8 @@
     "phaseHp": [
      157500000000000
     ],
-    "level": 255
+    "level": 255,
+    "hpLabel": null
    },
    {
     "name": "Black Mage",
@@ -1000,7 +1069,8 @@
      157500000000000,
      136500000000000
     ],
-    "level": 255
+    "level": 255,
+    "hpLabel": null
    },
    {
     "name": "Chosen Seren",
@@ -1015,7 +1085,8 @@
      126000000000000,
      357000000000000
     ],
-    "level": 260
+    "level": 260,
+    "hpLabel": null
    },
    {
     "name": "Kalos",
@@ -1030,7 +1101,8 @@
      1066000000000000,
      4060000000000000
     ],
-    "level": 265
+    "level": 265,
+    "hpLabel": null
    },
    {
     "name": "First Adversary",
@@ -1046,7 +1118,8 @@
      3135000000000000,
      4180000000000000
     ],
-    "level": 270
+    "level": 270,
+    "hpLabel": null
    },
    {
     "name": "Kaling",
@@ -1062,7 +1135,8 @@
      1404000000000000,
      5259000000000000
     ],
-    "level": 275
+    "level": 275,
+    "hpLabel": null
    },
    {
     "name": "Malefic Star",
@@ -1076,7 +1150,8 @@
     "phaseHp": [
      14740000000000000
     ],
-    "level": 280
+    "level": 280,
+    "hpLabel": null
    },
    {
     "name": "Bellona",
@@ -1091,7 +1166,8 @@
      5564000000000000,
      8152000000000000
     ],
-    "level": 280
+    "level": 280,
+    "hpLabel": null
    },
    {
     "name": "Limbo",
@@ -1107,7 +1183,8 @@
      3774000000000000,
      4884000000000000
     ],
-    "level": 285
+    "level": 285,
+    "hpLabel": null
    },
    {
     "name": "Baldrix",
@@ -1123,7 +1200,8 @@
      5688000000000000,
      9072000000000000
     ],
-    "level": 290
+    "level": 290,
+    "hpLabel": null
    },
    {
     "name": "Jupiter",
@@ -1137,7 +1215,8 @@
     "phaseHp": [
      49400000000000000
     ],
-    "level": 295
+    "level": 295,
+    "hpLabel": null
    },
    {
     "name": "Kai",
@@ -1152,19 +1231,24 @@
      241500000000000,
      241500000000000
     ],
-    "level": 280
+    "level": 280,
+    "hpLabel": null
    },
    {
     "name": "Meilin",
     "boss": "Meilin",
-    "difficulty": null,
-    "world": null,
+    "difficulty": "Hard",
+    "world": "Other",
     "gender": null,
     "region": "Seasonal",
-    "phases": null,
-    "hp": null,
-    "phaseHp": null,
-    "level": null
+    "phases": 2,
+    "hp": 580000000000000,
+    "phaseHp": [
+     290000000000000,
+     290000000000000
+    ],
+    "level": 280,
+    "hpLabel": null
    },
    {
     "name": "Balrog",
@@ -1178,7 +1262,8 @@
     "phaseHp": [
      4787520
     ],
-    "level": 65
+    "level": 65,
+    "hpLabel": null
    },
    {
     "name": "Ursus",
@@ -1192,7 +1277,8 @@
     "phaseHp": [
      2625000000000
     ],
-    "level": 100
+    "level": 100,
+    "hpLabel": null
    },
    {
     "name": "Yakuza Boss",
@@ -1206,7 +1292,8 @@
     "phaseHp": [
      1000000000
     ],
-    "level": 172
+    "level": 160,
+    "hpLabel": null
    },
    {
     "name": "Frenzied Gigatoad",
@@ -1220,7 +1307,8 @@
     "phaseHp": [
      1700000000
     ],
-    "level": 183
+    "level": 170,
+    "hpLabel": null
    },
    {
     "name": "Extreme Bigfoot",
@@ -1234,7 +1322,8 @@
     "phaseHp": [
      15000000000000
     ],
-    "level": 260
+    "level": 260,
+    "hpLabel": null
    }
   ],
   "extreme": [
@@ -1251,7 +1340,8 @@
      1632000,
      2200000
     ],
-    "level": 50
+    "level": 50,
+    "hpLabel": null
    },
    {
     "name": "Zakum (Normal)",
@@ -1266,7 +1356,8 @@
      5600000,
      7000000
     ],
-    "level": 90
+    "level": 90,
+    "hpLabel": null
    },
    {
     "name": "Zakum (Chaos)",
@@ -1281,7 +1372,8 @@
      84000000000,
      84000000000
     ],
-    "level": 90
+    "level": 90,
+    "hpLabel": null
    },
    {
     "name": "Papulatus (Easy)",
@@ -1296,7 +1388,8 @@
      300000000,
      100000000
     ],
-    "level": 115
+    "level": 115,
+    "hpLabel": null
    },
    {
     "name": "Papulatus (Normal)",
@@ -1311,7 +1404,8 @@
      12600000000,
      4200000000
     ],
-    "level": 155
+    "level": 155,
+    "hpLabel": null
    },
    {
     "name": "Papulatus (Chaos)",
@@ -1326,7 +1420,8 @@
      378000000000,
      126000000000
     ],
-    "level": 190
+    "level": 190,
+    "hpLabel": null
    },
    {
     "name": "Magnus (Easy)",
@@ -1340,7 +1435,8 @@
     "phaseHp": [
      400000000
     ],
-    "level": 115
+    "level": 115,
+    "hpLabel": null
    },
    {
     "name": "Magnus (Normal)",
@@ -1354,7 +1450,8 @@
     "phaseHp": [
      6000000000
     ],
-    "level": 155
+    "level": 155,
+    "hpLabel": null
    },
    {
     "name": "Magnus (Hard)",
@@ -1368,7 +1465,8 @@
     "phaseHp": [
      120000000000
     ],
-    "level": 175
+    "level": 175,
+    "hpLabel": null
    },
    {
     "name": "Hilla (Normal)",
@@ -1382,7 +1480,8 @@
     "phaseHp": [
      500000000
     ],
-    "level": 85
+    "level": 85,
+    "hpLabel": null
    },
    {
     "name": "Hilla (Hard)",
@@ -1396,7 +1495,8 @@
     "phaseHp": [
      16800000000
     ],
-    "level": 170
+    "level": 170,
+    "hpLabel": null
    },
    {
     "name": "Mori Ranmaru (Normal)",
@@ -1410,7 +1510,8 @@
     "phaseHp": [
      1000000000
     ],
-    "level": 120
+    "level": 120,
+    "hpLabel": null
    },
    {
     "name": "Mori Ranmaru (Hard)",
@@ -1424,7 +1525,8 @@
     "phaseHp": [
      84000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Horntail (Easy)",
@@ -1440,7 +1542,8 @@
      100000000,
      817600000
     ],
-    "level": 130
+    "level": 130,
+    "hpLabel": null
    },
    {
     "name": "Horntail (Normal)",
@@ -1456,7 +1559,8 @@
      330000000,
      2090000000
     ],
-    "level": 130
+    "level": 130,
+    "hpLabel": null
    },
    {
     "name": "Horntail (Chaos)",
@@ -1472,7 +1576,8 @@
      3300000000,
      20000000000
     ],
-    "level": 135
+    "level": 135,
+    "hpLabel": null
    },
    {
     "name": "Pierre (Normal)",
@@ -1486,7 +1591,8 @@
     "phaseHp": [
      315000000
     ],
-    "level": 125
+    "level": 125,
+    "hpLabel": null
    },
    {
     "name": "Pierre (Chaos)",
@@ -1500,7 +1606,8 @@
     "phaseHp": [
      80000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Von Bon (Normal)",
@@ -1514,7 +1621,8 @@
     "phaseHp": [
      315000000
     ],
-    "level": 125
+    "level": 125,
+    "hpLabel": null
    },
    {
     "name": "Von Bon (Chaos)",
@@ -1528,7 +1636,8 @@
     "phaseHp": [
      100000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Crimson Queen (Normal)",
@@ -1542,7 +1651,8 @@
     "phaseHp": [
      315000000
     ],
-    "level": 125
+    "level": 125,
+    "hpLabel": null
    },
    {
     "name": "Crimson Queen (Chaos)",
@@ -1556,7 +1666,8 @@
     "phaseHp": [
      140000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Vellum (Normal)",
@@ -1570,7 +1681,8 @@
     "phaseHp": [
      550000000
     ],
-    "level": 125
+    "level": 125,
+    "hpLabel": null
    },
    {
     "name": "Vellum (Chaos)",
@@ -1584,7 +1696,8 @@
     "phaseHp": [
      200000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Von Leon (Easy)",
@@ -1598,7 +1711,8 @@
     "phaseHp": [
      700000000
     ],
-    "level": 125
+    "level": 125,
+    "hpLabel": null
    },
    {
     "name": "Von Leon (Normal)",
@@ -1612,7 +1726,8 @@
     "phaseHp": [
      6300000000
     ],
-    "level": 125
+    "level": 125,
+    "hpLabel": null
    },
    {
     "name": "Von Leon (Hard)",
@@ -1626,7 +1741,8 @@
     "phaseHp": [
      10500000000
     ],
-    "level": 125
+    "level": 125,
+    "hpLabel": null
    },
    {
     "name": "Arkarium (Easy)",
@@ -1640,7 +1756,8 @@
     "phaseHp": [
      2100000000
     ],
-    "level": 140
+    "level": 140,
+    "hpLabel": null
    },
    {
     "name": "Arkarium (Normal)",
@@ -1654,7 +1771,8 @@
     "phaseHp": [
      12600000000
     ],
-    "level": 140
+    "level": 140,
+    "hpLabel": null
    },
    {
     "name": "Gollux (Easy)",
@@ -1670,7 +1788,8 @@
      50000000,
      10000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Gollux (Normal)",
@@ -1686,7 +1805,8 @@
      3000000000,
      600000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Gollux (Hard)",
@@ -1702,7 +1822,8 @@
      75000000000,
      15000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Gollux (Hell)",
@@ -1718,7 +1839,8 @@
      350000000000,
      70000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "OMNI-CLN",
@@ -1732,7 +1854,8 @@
     "phaseHp": [
      1680000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Pink Bean (Normal)",
@@ -1746,7 +1869,8 @@
     "phaseHp": [
      2100000000
     ],
-    "level": 140
+    "level": 140,
+    "hpLabel": null
    },
    {
     "name": "Pink Bean (Chaos)",
@@ -1762,7 +1886,8 @@
      23100000000,
      33600000000
     ],
-    "level": 170
+    "level": 170,
+    "hpLabel": null
    },
    {
     "name": "Cygnus (Easy)",
@@ -1776,7 +1901,8 @@
     "phaseHp": [
      10500000000
     ],
-    "level": 165
+    "level": 165,
+    "hpLabel": null
    },
    {
     "name": "Cygnus (Normal)",
@@ -1790,7 +1916,8 @@
     "phaseHp": [
      63000000000
     ],
-    "level": 165
+    "level": 165,
+    "hpLabel": null
    },
    {
     "name": "Princess No",
@@ -1804,7 +1931,8 @@
     "phaseHp": [
      500000000000
     ],
-    "level": 180
+    "level": 180,
+    "hpLabel": null
    },
    {
     "name": "Akechi Mitsuhide",
@@ -1819,7 +1947,8 @@
      350000000000,
      350000000000
     ],
-    "level": 200
+    "level": 200,
+    "hpLabel": null
    },
    {
     "name": "Lotus (Normal)",
@@ -1835,7 +1964,8 @@
      472500000000,
      630000000000
     ],
-    "level": 190
+    "level": 190,
+    "hpLabel": null
    },
    {
     "name": "Lotus (Hard)",
@@ -1851,7 +1981,8 @@
      9985500000000,
      13314000000000
     ],
-    "level": 190
+    "level": 190,
+    "hpLabel": null
    },
    {
     "name": "Lotus (Extreme)",
@@ -1867,7 +1998,8 @@
      543300000000000,
      724400000000000
     ],
-    "level": 190
+    "level": 190,
+    "hpLabel": null
    },
    {
     "name": "Damien (Normal)",
@@ -1882,7 +2014,8 @@
      840000000000,
      360000000000
     ],
-    "level": 190
+    "level": 190,
+    "hpLabel": null
    },
    {
     "name": "Damien (Hard)",
@@ -1897,7 +2030,8 @@
      25200000000000,
      10800000000000
     ],
-    "level": 190
+    "level": 190,
+    "hpLabel": null
    },
    {
     "name": "Guardian Angel Slime (Normal)",
@@ -1911,7 +2045,8 @@
     "phaseHp": [
      5000000000000
     ],
-    "level": 210
+    "level": 210,
+    "hpLabel": null
    },
    {
     "name": "Guardian Angel Slime (Chaos)",
@@ -1925,7 +2060,8 @@
     "phaseHp": [
      90000000000000
     ],
-    "level": 210
+    "level": 210,
+    "hpLabel": null
    },
    {
     "name": "Lucid (Easy)",
@@ -1940,7 +2076,8 @@
      6000000000000,
      6000000000000
     ],
-    "level": 220
+    "level": 220,
+    "hpLabel": null
    },
    {
     "name": "Lucid (Normal)",
@@ -1955,7 +2092,8 @@
      12000000000000,
      12000000000000
     ],
-    "level": 220
+    "level": 220,
+    "hpLabel": null
    },
    {
     "name": "Lucid (Hard)",
@@ -1971,7 +2109,8 @@
      54000000000000,
      12800000000000
     ],
-    "level": 220
+    "level": 220,
+    "hpLabel": null
    },
    {
     "name": "Will (Easy)",
@@ -1987,7 +2126,8 @@
      4200000000000,
      7000000000000
     ],
-    "level": 235
+    "level": 235,
+    "hpLabel": null
    },
    {
     "name": "Will (Normal)",
@@ -2003,7 +2143,8 @@
      6300000000000,
      10500000000000
     ],
-    "level": 235
+    "level": 235,
+    "hpLabel": null
    },
    {
     "name": "Will (Hard)",
@@ -2019,7 +2160,8 @@
      31500000000000,
      52500000000000
     ],
-    "level": 235
+    "level": 235,
+    "hpLabel": null
    },
    {
     "name": "Gloom (Normal)",
@@ -2033,7 +2175,8 @@
     "phaseHp": [
      25410000000000
     ],
-    "level": 245
+    "level": 245,
+    "hpLabel": null
    },
    {
     "name": "Gloom (Chaos)",
@@ -2047,7 +2190,8 @@
     "phaseHp": [
      127050000000000
     ],
-    "level": 245
+    "level": 245,
+    "hpLabel": null
    },
    {
     "name": "Verus Hilla (Normal)",
@@ -2061,7 +2205,8 @@
     "phaseHp": [
      89250000000000
     ],
-    "level": 250
+    "level": 250,
+    "hpLabel": null
    },
    {
     "name": "Verus Hilla (Hard)",
@@ -2075,7 +2220,8 @@
     "phaseHp": [
      178500000000000
     ],
-    "level": 250
+    "level": 250,
+    "hpLabel": null
    },
    {
     "name": "Malicia (Normal)",
@@ -2085,14 +2231,15 @@
     "gender": "Female",
     "region": "JMS/CMS/TMS",
     "phases": 4,
-    "hp": 96389999274668,
+    "hp": 178000000000000,
     "phaseHp": [
-     24097499818667,
-     24097499818667,
-     24097499818667,
-     24097499818667
+     70000000000000,
+     56000000000000,
+     24000000000000,
+     28000000000000
     ],
-    "level": 250
+    "level": 250,
+    "hpLabel": null
    },
    {
     "name": "Malicia (Extreme)",
@@ -2102,14 +2249,12 @@
     "gender": "Female",
     "region": "JMS/CMS/TMS",
     "phases": 4,
-    "hp": 431999979705685332,
+    "hp": 300000000000000000,
     "phaseHp": [
-     107999994926421333,
-     107999994926421333,
-     107999994926421333,
-     107999994926421333
+     300000000000000000
     ],
-    "level": 250
+    "level": 250,
+    "hpLabel": "300Q+"
    },
    {
     "name": "Darknell (Normal)",
@@ -2123,7 +2268,8 @@
     "phaseHp": [
      26250000000000
     ],
-    "level": 255
+    "level": 255,
+    "hpLabel": null
    },
    {
     "name": "Darknell (Hard)",
@@ -2137,7 +2283,8 @@
     "phaseHp": [
      157500000000000
     ],
-    "level": 255
+    "level": 255,
+    "hpLabel": null
    },
    {
     "name": "Black Mage (Hard)",
@@ -2154,7 +2301,8 @@
      157500000000000,
      136500000000000
     ],
-    "level": 255
+    "level": 255,
+    "hpLabel": null
    },
    {
     "name": "Black Mage (Extreme)",
@@ -2171,7 +2319,8 @@
      1285000000000000,
      1155000000000000
     ],
-    "level": 255
+    "level": 255,
+    "hpLabel": null
    },
    {
     "name": "Chosen Seren (Normal)",
@@ -2186,7 +2335,8 @@
      52500000000000,
      155400000000000
     ],
-    "level": 260
+    "level": 260,
+    "hpLabel": null
    },
    {
     "name": "Chosen Seren (Hard)",
@@ -2201,7 +2351,8 @@
      126000000000000,
      357000000000000
     ],
-    "level": 260
+    "level": 260,
+    "hpLabel": null
    },
    {
     "name": "Chosen Seren (Extreme)",
@@ -2216,7 +2367,8 @@
      1320000000000000,
      5160000000000000
     ],
-    "level": 260
+    "level": 260,
+    "hpLabel": null
    },
    {
     "name": "Kalos (Easy)",
@@ -2231,7 +2383,8 @@
      94500000000000,
      262500000000000
     ],
-    "level": 265
+    "level": 265,
+    "hpLabel": null
    },
    {
     "name": "Kalos (Normal)",
@@ -2246,7 +2399,8 @@
      336000000000000,
      720000000000000
     ],
-    "level": 265
+    "level": 265,
+    "hpLabel": null
    },
    {
     "name": "Kalos (Chaos)",
@@ -2261,7 +2415,8 @@
      1066000000000000,
      4060000000000000
     ],
-    "level": 265
+    "level": 265,
+    "hpLabel": null
    },
    {
     "name": "Kalos (Extreme)",
@@ -2276,7 +2431,8 @@
      5798000000000000,
      15498000000000000
     ],
-    "level": 265
+    "level": 265,
+    "hpLabel": null
    },
    {
     "name": "First Adversary (Easy)",
@@ -2292,7 +2448,8 @@
      171000000000000,
      228000000000000
     ],
-    "level": 270
+    "level": 270,
+    "hpLabel": null
    },
    {
     "name": "First Adversary (Normal)",
@@ -2308,7 +2465,8 @@
      495000000000000,
      660000000000000
     ],
-    "level": 270
+    "level": 270,
+    "hpLabel": null
    },
    {
     "name": "First Adversary (Hard)",
@@ -2324,7 +2482,8 @@
      3135000000000000,
      4180000000000000
     ],
-    "level": 270
+    "level": 270,
+    "hpLabel": null
    },
    {
     "name": "First Adversary (Extreme)",
@@ -2340,7 +2499,8 @@
      9655000000000000,
      12870000000000000
     ],
-    "level": 270
+    "level": 270,
+    "hpLabel": null
    },
    {
     "name": "Kaling (Easy)",
@@ -2356,7 +2516,8 @@
      105000000000000,
      263350000000000
     ],
-    "level": 275
+    "level": 275,
+    "hpLabel": null
    },
    {
     "name": "Kaling (Normal)",
@@ -2372,7 +2533,8 @@
      468000000000000,
      1125300000000000
     ],
-    "level": 275
+    "level": 275,
+    "hpLabel": null
    },
    {
     "name": "Kaling (Hard)",
@@ -2388,7 +2550,8 @@
      1404000000000000,
      5259000000000000
     ],
-    "level": 275
+    "level": 275,
+    "hpLabel": null
    },
    {
     "name": "Kaling (Extreme)",
@@ -2404,7 +2567,8 @@
      6930000000000000,
      14976300000000000
     ],
-    "level": 275
+    "level": 275,
+    "hpLabel": null
    },
    {
     "name": "Malefic Star (Normal)",
@@ -2418,7 +2582,8 @@
     "phaseHp": [
      3288000000000000
     ],
-    "level": 280
+    "level": 280,
+    "hpLabel": null
    },
    {
     "name": "Malefic Star (Hard)",
@@ -2432,7 +2597,8 @@
     "phaseHp": [
      14740000000000000
     ],
-    "level": 280
+    "level": 280,
+    "hpLabel": null
    },
    {
     "name": "Bellona (Easy)",
@@ -2447,7 +2613,8 @@
      316000000000000,
      463000000000000
     ],
-    "level": 280
+    "level": 280,
+    "hpLabel": null
    },
    {
     "name": "Bellona (Normal)",
@@ -2462,7 +2629,8 @@
      1652000000000000,
      2470000000000000
     ],
-    "level": 280
+    "level": 280,
+    "hpLabel": null
    },
    {
     "name": "Bellona (Hard)",
@@ -2477,7 +2645,8 @@
      5564000000000000,
      8152000000000000
     ],
-    "level": 280
+    "level": 280,
+    "hpLabel": null
    },
    {
     "name": "Limbo (Normal)",
@@ -2493,7 +2662,8 @@
      1944000000000000,
      2592000000000000
     ],
-    "level": 285
+    "level": 285,
+    "hpLabel": null
    },
    {
     "name": "Limbo (Hard)",
@@ -2509,7 +2679,8 @@
      3774000000000000,
      4884000000000000
     ],
-    "level": 285
+    "level": 285,
+    "hpLabel": null
    },
    {
     "name": "Baldrix (Normal)",
@@ -2525,7 +2696,8 @@
      2531000000000000,
      4145000000000000
     ],
-    "level": 290
+    "level": 290,
+    "hpLabel": null
    },
    {
     "name": "Baldrix (Hard)",
@@ -2541,7 +2713,8 @@
      5688000000000000,
      9072000000000000
     ],
-    "level": 290
+    "level": 290,
+    "hpLabel": null
    },
    {
     "name": "Jupiter (Normal)",
@@ -2555,7 +2728,8 @@
     "phaseHp": [
      10266000000000000
     ],
-    "level": 295
+    "level": 295,
+    "hpLabel": null
    },
    {
     "name": "Jupiter (Hard)",
@@ -2569,7 +2743,8 @@
     "phaseHp": [
      49400000000000000
     ],
-    "level": 295
+    "level": 295,
+    "hpLabel": null
    },
    {
     "name": "Kai (Normal)",
@@ -2584,7 +2759,8 @@
      63000000000000,
      63000000000000
     ],
-    "level": 270
+    "level": 270,
+    "hpLabel": null
    },
    {
     "name": "Kai (Hard)",
@@ -2599,19 +2775,40 @@
      241500000000000,
      241500000000000
     ],
-    "level": 280
+    "level": 280,
+    "hpLabel": null
    },
    {
-    "name": "Meilin",
+    "name": "Meilin (Normal)",
     "boss": "Meilin",
-    "difficulty": null,
-    "world": null,
+    "difficulty": "Normal",
+    "world": "Other",
     "gender": null,
     "region": "Seasonal",
-    "phases": null,
-    "hp": null,
-    "phaseHp": null,
-    "level": null
+    "phases": 2,
+    "hp": 117850000000000,
+    "phaseHp": [
+     58925000000000,
+     58925000000000
+    ],
+    "level": 270,
+    "hpLabel": null
+   },
+   {
+    "name": "Meilin (Hard)",
+    "boss": "Meilin",
+    "difficulty": "Hard",
+    "world": "Other",
+    "gender": null,
+    "region": "Seasonal",
+    "phases": 2,
+    "hp": 580000000000000,
+    "phaseHp": [
+     290000000000000,
+     290000000000000
+    ],
+    "level": 280,
+    "hpLabel": null
    },
    {
     "name": "Balrog",
@@ -2625,7 +2822,8 @@
     "phaseHp": [
      4787520
     ],
-    "level": 65
+    "level": 65,
+    "hpLabel": null
    },
    {
     "name": "Ursus",
@@ -2639,7 +2837,8 @@
     "phaseHp": [
      2625000000000
     ],
-    "level": 100
+    "level": 100,
+    "hpLabel": null
    },
    {
     "name": "Yakuza Boss",
@@ -2653,7 +2852,8 @@
     "phaseHp": [
      1000000000
     ],
-    "level": 172
+    "level": 160,
+    "hpLabel": null
    },
    {
     "name": "Frenzied Gigatoad",
@@ -2667,7 +2867,8 @@
     "phaseHp": [
      1700000000
     ],
-    "level": 183
+    "level": 170,
+    "hpLabel": null
    },
    {
     "name": "Extreme Bigfoot",
@@ -2681,93 +2882,8 @@
     "phaseHp": [
      15000000000000
     ],
-    "level": 260
-   },
-   {
-    "name": "Pianus",
-    "boss": "Pianus",
-    "difficulty": "Normal",
-    "world": "Maple World",
-    "gender": "Other",
-    "region": "All",
-    "phases": 1,
-    "hp": 30000000,
-    "phaseHp": [
-     30000000
-    ],
-    "level": 110
-   },
-   {
-    "name": "Krexel",
-    "boss": "Krexel",
-    "difficulty": "Normal",
-    "world": "Maple World",
-    "gender": "Other",
-    "region": "?",
-    "phases": 1,
-    "hp": 2100000000,
-    "phaseHp": [
-     2100000000
-    ],
-    "level": 250
-   },
-   {
-    "name": "Scarlion & Targa",
-    "boss": "Scarlion & Targa",
-    "difficulty": "Normal",
-    "world": "Maple World",
-    "gender": "Other",
-    "region": "?",
-    "phases": 3,
-    "hp": 2966341600,
-    "phaseHp": [
-     637747200,
-     1061500000,
-     1267094400
-    ],
-    "level": 240
-   },
-   {
-    "name": "Ravana",
-    "boss": "Ravana",
-    "difficulty": "Normal",
-    "world": "Maple World",
-    "gender": "Male",
-    "region": "?",
-    "phases": 1,
-    "hp": 516798500,
-    "phaseHp": [
-     516798500
-    ],
-    "level": 140
-   },
-   {
-    "name": "Xerxes",
-    "boss": "Xerxes",
-    "difficulty": "Normal",
-    "world": "Maple World",
-    "gender": "Male",
-    "region": "?",
-    "phases": 1,
-    "hp": 2976000000,
-    "phaseHp": [
-     2976000000
-    ],
-    "level": 180
-   },
-   {
-    "name": "Nibelung",
-    "boss": "Nibelung",
-    "difficulty": "Normal",
-    "world": "Maple World",
-    "gender": "Other",
-    "region": "?",
-    "phases": 1,
-    "hp": 16800000,
-    "phaseHp": [
-     16800000
-    ],
-    "level": 169
+    "level": 260,
+    "hpLabel": null
    },
    {
     "name": "Reina",
@@ -2781,127 +2897,131 @@
     "phaseHp": [
      2100000000
     ],
-    "level": 280
+    "level": 280,
+    "hpLabel": null
    },
    {
     "name": "Julieta",
     "boss": "Julieta",
-    "difficulty": null,
+    "difficulty": "Normal",
     "world": "Maple World",
     "gender": "Female",
     "region": "Removed",
     "phases": null,
     "hp": null,
     "phaseHp": null,
-    "level": null
+    "level": null,
+    "hpLabel": null
    },
    {
     "name": "Cross",
     "boss": "Cross",
-    "difficulty": null,
+    "difficulty": "Normal",
     "world": "Maple World",
     "gender": "Male",
     "region": "Removed",
     "phases": null,
     "hp": null,
     "phaseHp": null,
-    "level": null
+    "level": null,
+    "hpLabel": null
    },
    {
     "name": "Normal Inferno Wolf",
     "boss": "Normal Inferno Wolf",
-    "difficulty": null,
+    "difficulty": "Normal",
     "world": "Maple World",
     "gender": "Other",
     "region": "Removed",
-    "phases": null,
-    "hp": null,
-    "phaseHp": null,
-    "level": null
+    "phases": 1,
+    "hp": 10000000000,
+    "phaseHp": [
+     10000000000
+    ],
+    "level": 10,
+    "hpLabel": null
    },
    {
     "name": "Chaos Inferno Wolf",
     "boss": "Chaos Inferno Wolf",
-    "difficulty": null,
+    "difficulty": "Normal",
     "world": "Maple World",
     "gender": "Other",
     "region": "Removed",
-    "phases": null,
-    "hp": null,
-    "phaseHp": null,
-    "level": null
+    "phases": 1,
+    "hp": 20000000000000,
+    "phaseHp": [
+     20000000000000
+    ],
+    "level": 200,
+    "hpLabel": null
    },
    {
     "name": "Extreme Inferno Wolf",
     "boss": "Extreme Inferno Wolf",
-    "difficulty": null,
+    "difficulty": "Normal",
     "world": "Maple World",
     "gender": "Other",
     "region": "Removed",
-    "phases": null,
-    "hp": null,
-    "phaseHp": null,
-    "level": null
-   },
-   {
-    "name": "Inferno Wolf #4",
-    "boss": "Inferno Wolf #4",
-    "difficulty": null,
-    "world": null,
-    "gender": "Other",
-    "region": "Removed",
-    "phases": null,
-    "hp": null,
-    "phaseHp": null,
-    "level": null
+    "phases": 1,
+    "hp": 100000000000000,
+    "phaseHp": [
+     100000000000000
+    ],
+    "level": 260,
+    "hpLabel": null
    },
    {
     "name": "Aufheben",
     "boss": "Aufheben",
-    "difficulty": null,
-    "world": null,
-    "gender": null,
-    "region": null,
+    "difficulty": "Normal",
+    "world": "Other",
+    "gender": "Female",
+    "region": "Event",
     "phases": null,
     "hp": null,
     "phaseHp": null,
-    "level": null
+    "level": null,
+    "hpLabel": null
    },
    {
     "name": "Tweentona",
     "boss": "Tweentona",
-    "difficulty": null,
-    "world": null,
-    "gender": null,
-    "region": null,
+    "difficulty": "Normal",
+    "world": "Other",
+    "gender": "Other",
+    "region": "Event",
     "phases": null,
     "hp": null,
     "phaseHp": null,
-    "level": null
+    "level": null,
+    "hpLabel": null
    },
    {
     "name": "Gerand Darmoor",
     "boss": "Gerand Darmoor",
-    "difficulty": null,
+    "difficulty": "Hard",
     "world": "Grandis",
     "gender": "Male",
     "region": null,
     "phases": null,
     "hp": null,
     "phaseHp": null,
-    "level": null
+    "level": null,
+    "hpLabel": null
    },
    {
     "name": "Havoc",
     "boss": "Havoc",
-    "difficulty": null,
+    "difficulty": "Hard",
     "world": "Grandis",
     "gender": "Male",
     "region": null,
     "phases": null,
     "hp": null,
     "phaseHp": null,
-    "level": null
+    "level": null,
+    "hpLabel": null
    }
   ]
  },
@@ -2912,31 +3032,24 @@
   "Vellum": "Chaos HP is 120B in MSEA",
   "Gollux": "HP = 3 Head phases only. Wiki only lists the 180+ requirement, so every mode uses 180",
   "Cygnus": "Removed from KMS in the Overdrive update",
-  "Malicia": "ESTIMATE: wiki only has Phase 3 HP, so all 4 phases are assumed equal to it",
+  "Malicia": "Normal HP from Bahamut (TMS) boss HP table, Jul 2026: P1 49T + inner world 21T, P2 56T, P3 24T, P4 28T. Extreme: known phases total ~149.7Q but Phase 4 is unknown, so shown as 300Q+",
   "Kaling": "P1 = 3 perils, P2 = Kaling, P3 = 3 perils + Frenzied Kaling",
   "Limbo": "P2 = two separate parts",
   "Kai": "Challenger World seasonal boss; World set to Other (Nexus Tower)",
-  "Meilin": "NOT ON WIKI - need world, gender, phases, HP, level",
+  "Meilin": "Namu Wiki: Challenger World Season 4 boss, phase 2 starts at 50% HP. Gender not found",
   "Balrog": "Only Easy mode exists; HP = body + 2 extra parts",
-  "Yakuza Boss": "Level is monster level (no entry level listed)",
-  "Frenzied Gigatoad": "HP is 900M in GMS; level is monster level",
-  "Extreme Bigfoot": "Monster Park Extreme; level is monster level",
-  "Pianus": "Classic Cave of Pianus version; level is monster level",
-  "Krexel": "Ulu City; level is monster level",
-  "Scarlion & Targa": "Both bosses summed; phases = normal/angry/furious forms; level is monster level",
-  "Ravana": "Golden Temple; level is monster level",
-  "Xerxes": "Level is monster level",
-  "Nibelung": "Monster Park; level is monster level",
-  "Reina": "Arteria quest boss; level is monster level",
-  "Julieta": "Removed (Monad). Wiki has no HP/level/phases",
-  "Cross": "Removed JMS/TMS boss. Wiki has no HP/level/phases",
-  "Normal Inferno Wolf": "Bounty portal boss (Lv 10-199). Wiki has no HP",
-  "Chaos Inferno Wolf": "Bounty portal boss (Lv 200-259). Wiki has no HP",
-  "Extreme Inferno Wolf": "Bounty portal boss (Lv 260+). Wiki has no HP",
-  "Inferno Wolf #4": "Wiki only lists 3 Inferno Wolf types - which is the 4th?",
-  "Aufheben": "NOT ON WIKI",
-  "Tweentona": "NOT ON WIKI - check spelling",
-  "Gerand Darmoor": "Story NPC page only, no monster stats on wiki",
-  "Havoc": "Story NPC page only, no monster stats on wiki"
+  "Yakuza Boss": "Entry level = Showa Town quest requirement",
+  "Frenzied Gigatoad": "HP is 900M in GMS; entry level = Ninja Castle requirement",
+  "Extreme Bigfoot": "Monster Park Extreme (260+)",
+  "Reina": "Arteria quest boss; entry level = Arteria requirement",
+  "Julieta": "Removed (Monad). No HP/level/phases on any wiki",
+  "Cross": "Removed JMS/TMS boss. No HP/level/phases on any wiki",
+  "Normal Inferno Wolf": "Bounty portal boss, Lv 10-199. HP from Namu Wiki",
+  "Chaos Inferno Wolf": "Bounty portal boss, Lv 200-259. HP from Namu Wiki",
+  "Extreme Inferno Wolf": "Bounty portal boss, Lv 260+. HP from Namu Wiki",
+  "Aufheben": "Event boss",
+  "Tweentona": "Event boss",
+  "Gerand Darmoor": "No boss fight found on MapleWiki or Namu Wiki (story character only)",
+  "Havoc": "No boss fight found on MapleWiki or Namu Wiki (story character only)"
  }
 }

@@ -1,6 +1,6 @@
 # Maple Wordle - boss data review
 
-Generated from `bosses.json`. **?** = still missing. HP units: M = million, B = billion, T = trillion, Q = quadrillion.
+Generated from `bosses.json`. ??? = unknown. HP units: M = million, B = billion, T = trillion, Q = quadrillion.
 
 ## Normal / Story pool - 39 entries
 
@@ -31,7 +31,7 @@ Generated from `bosses.json`. **?** = still missing. HP units: M = million, B = 
 | Will | Hard | Maple World | Male | All | 3 | 126T | 235 |
 | Gloom | Chaos | Maple World | Other | All | 1 | 127.05T | 245 |
 | Verus Hilla | Hard | Maple World | Female | All | 1 | 178.5T | 250 |
-| Malicia | Normal | Maple World | Female | JMS/CMS/TMS | 4 | 96.39T | 250 |
+| Malicia | Normal | Maple World | Female | JMS/CMS/TMS | 4 | 178T | 250 |
 | Darknell | Hard | Maple World | Male | All | 1 | 157.5T | 255 |
 | Black Mage | Hard | Maple World | Male | All | 4 | 472.5T | 255 |
 | Chosen Seren | Hard | Grandis | Female | All | 2 | 483T | 260 |
@@ -44,7 +44,7 @@ Generated from `bosses.json`. **?** = still missing. HP units: M = million, B = 
 | Baldrix | Hard | Grandis | Male | All | 3 | 20.1Q | 290 |
 | Jupiter | Hard | Grandis | Male | All | 1 | 49.4Q | 295 |
 | Kai | Hard | Other | Male | Seasonal | 2 | 483T | 280 |
-| Meilin | **?** | **?** | **?** | Seasonal | **?** | **?** | **?** |
+| Meilin | Hard | Other | ??? | Seasonal | 2 | 580T | 280 |
 
 ## Hard pool (Normal pool + extras) - 44 entries
 
@@ -54,11 +54,11 @@ Only the extras are shown; the Normal pool is included too.
 |---|---|---|---|---|---|---|---|
 | Balrog | Easy | Maple World | Male | All | 1 | 4.788M | 65 |
 | Ursus | Normal | Maple World | Other | GMS only | 1 | 2.625T | 100 |
-| Yakuza Boss | Normal | Maple World | Male | All | 1 | 1B | 172 |
-| Frenzied Gigatoad | Hard | Maple World | Other | All | 1 | 1.7B | 183 |
+| Yakuza Boss | Normal | Maple World | Male | All | 1 | 1B | 160 |
+| Frenzied Gigatoad | Hard | Maple World | Other | All | 1 | 1.7B | 170 |
 | Extreme Bigfoot | Normal | Maple World | Other | All | 1 | 15T | 260 |
 
-## Extreme pool (every difficulty + extras) - 114 entries
+## Extreme pool (every difficulty + extras) - 108 entries
 
 | Boss | Mode | World | Gender | Region | Phases | HP | Entry Lv |
 |---|---|---|---|---|---|---|---|
@@ -119,8 +119,8 @@ Only the extras are shown; the Normal pool is included too.
 | Gloom (Chaos) | Chaos | Maple World | Other | All | 1 | 127.05T | 245 |
 | Verus Hilla (Normal) | Normal | Maple World | Female | All | 1 | 89.25T | 250 |
 | Verus Hilla (Hard) | Hard | Maple World | Female | All | 1 | 178.5T | 250 |
-| Malicia (Normal) | Normal | Maple World | Female | JMS/CMS/TMS | 4 | 96.39T | 250 |
-| Malicia (Extreme) | Extreme | Maple World | Female | JMS/CMS/TMS | 4 | 432Q | 250 |
+| Malicia (Normal) | Normal | Maple World | Female | JMS/CMS/TMS | 4 | 178T | 250 |
+| Malicia (Extreme) | Extreme | Maple World | Female | JMS/CMS/TMS | 4 | 300Q+ | 250 |
 | Darknell (Normal) | Normal | Maple World | Male | All | 1 | 26.25T | 255 |
 | Darknell (Hard) | Hard | Maple World | Male | All | 1 | 157.5T | 255 |
 | Black Mage (Hard) | Hard | Maple World | Male | All | 4 | 472.5T | 255 |
@@ -153,29 +153,23 @@ Only the extras are shown; the Normal pool is included too.
 | Jupiter (Hard) | Hard | Grandis | Male | All | 1 | 49.4Q | 295 |
 | Kai (Normal) | Normal | Other | Male | Seasonal | 2 | 126T | 270 |
 | Kai (Hard) | Hard | Other | Male | Seasonal | 2 | 483T | 280 |
-| Meilin | **?** | **?** | **?** | Seasonal | **?** | **?** | **?** |
+| Meilin (Normal) | Normal | Other | ??? | Seasonal | 2 | 117.85T | 270 |
+| Meilin (Hard) | Hard | Other | ??? | Seasonal | 2 | 580T | 280 |
 | Balrog | Easy | Maple World | Male | All | 1 | 4.788M | 65 |
 | Ursus | Normal | Maple World | Other | GMS only | 1 | 2.625T | 100 |
-| Yakuza Boss | Normal | Maple World | Male | All | 1 | 1B | 172 |
-| Frenzied Gigatoad | Hard | Maple World | Other | All | 1 | 1.7B | 183 |
+| Yakuza Boss | Normal | Maple World | Male | All | 1 | 1B | 160 |
+| Frenzied Gigatoad | Hard | Maple World | Other | All | 1 | 1.7B | 170 |
 | Extreme Bigfoot | Normal | Maple World | Other | All | 1 | 15T | 260 |
-| Pianus | Normal | Maple World | Other | All | 1 | 30M | 110 |
-| Krexel | Normal | Maple World | Other | ? | 1 | 2.1B | 250 |
-| Scarlion & Targa | Normal | Maple World | Other | ? | 3 | 2.966B | 240 |
-| Ravana | Normal | Maple World | Male | ? | 1 | 516.798M | 140 |
-| Xerxes | Normal | Maple World | Male | ? | 1 | 2.976B | 180 |
-| Nibelung | Normal | Maple World | Other | ? | 1 | 16.8M | 169 |
 | Reina | Normal | Grandis | Female | All | 1 | 2.1B | 280 |
-| Julieta | **?** | Maple World | Female | Removed | **?** | **?** | **?** |
-| Cross | **?** | Maple World | Male | Removed | **?** | **?** | **?** |
-| Normal Inferno Wolf | **?** | Maple World | Other | Removed | **?** | **?** | **?** |
-| Chaos Inferno Wolf | **?** | Maple World | Other | Removed | **?** | **?** | **?** |
-| Extreme Inferno Wolf | **?** | Maple World | Other | Removed | **?** | **?** | **?** |
-| Inferno Wolf #4 | **?** | **?** | Other | Removed | **?** | **?** | **?** |
-| Aufheben | **?** | **?** | **?** | **?** | **?** | **?** | **?** |
-| Tweentona | **?** | **?** | **?** | **?** | **?** | **?** | **?** |
-| Gerand Darmoor | **?** | Grandis | Male | **?** | **?** | **?** | **?** |
-| Havoc | **?** | Grandis | Male | **?** | **?** | **?** | **?** |
+| Julieta | Normal | Maple World | Female | Removed | ??? | ??? | ??? |
+| Cross | Normal | Maple World | Male | Removed | ??? | ??? | ??? |
+| Normal Inferno Wolf | Normal | Maple World | Other | Removed | 1 | 10B | 10 |
+| Chaos Inferno Wolf | Normal | Maple World | Other | Removed | 1 | 20T | 200 |
+| Extreme Inferno Wolf | Normal | Maple World | Other | Removed | 1 | 100T | 260 |
+| Aufheben | Normal | Other | Female | Event | ??? | ??? | ??? |
+| Tweentona | Normal | Other | Other | Event | ??? | ??? | ??? |
+| Gerand Darmoor | Hard | Grandis | Male | ??? | ??? | ??? | ??? |
+| Havoc | Hard | Grandis | Male | ??? | ??? | ??? | ??? |
 
 ## Notes
 
@@ -185,29 +179,22 @@ Only the extras are shown; the Normal pool is included too.
 - **Vellum**: Chaos HP is 120B in MSEA
 - **Gollux**: HP = 3 Head phases only. Wiki only lists the 180+ requirement, so every mode uses 180
 - **Cygnus**: Removed from KMS in the Overdrive update
-- **Malicia**: ESTIMATE: wiki only has Phase 3 HP, so all 4 phases are assumed equal to it
+- **Malicia**: Normal HP from Bahamut (TMS) boss HP table, Jul 2026: P1 49T + inner world 21T, P2 56T, P3 24T, P4 28T. Extreme: known phases total ~149.7Q but Phase 4 is unknown, so shown as 300Q+
 - **Kaling**: P1 = 3 perils, P2 = Kaling, P3 = 3 perils + Frenzied Kaling
 - **Limbo**: P2 = two separate parts
 - **Kai**: Challenger World seasonal boss; World set to Other (Nexus Tower)
-- **Meilin**: NOT ON WIKI - need world, gender, phases, HP, level
+- **Meilin**: Namu Wiki: Challenger World Season 4 boss, phase 2 starts at 50% HP. Gender not found
 - **Balrog**: Only Easy mode exists; HP = body + 2 extra parts
-- **Yakuza Boss**: Level is monster level (no entry level listed)
-- **Frenzied Gigatoad**: HP is 900M in GMS; level is monster level
-- **Extreme Bigfoot**: Monster Park Extreme; level is monster level
-- **Pianus**: Classic Cave of Pianus version; level is monster level
-- **Krexel**: Ulu City; level is monster level
-- **Scarlion & Targa**: Both bosses summed; phases = normal/angry/furious forms; level is monster level
-- **Ravana**: Golden Temple; level is monster level
-- **Xerxes**: Level is monster level
-- **Nibelung**: Monster Park; level is monster level
-- **Reina**: Arteria quest boss; level is monster level
-- **Julieta**: Removed (Monad). Wiki has no HP/level/phases
-- **Cross**: Removed JMS/TMS boss. Wiki has no HP/level/phases
-- **Normal Inferno Wolf**: Bounty portal boss (Lv 10-199). Wiki has no HP
-- **Chaos Inferno Wolf**: Bounty portal boss (Lv 200-259). Wiki has no HP
-- **Extreme Inferno Wolf**: Bounty portal boss (Lv 260+). Wiki has no HP
-- **Inferno Wolf #4**: Wiki only lists 3 Inferno Wolf types - which is the 4th?
-- **Aufheben**: NOT ON WIKI
-- **Tweentona**: NOT ON WIKI - check spelling
-- **Gerand Darmoor**: Story NPC page only, no monster stats on wiki
-- **Havoc**: Story NPC page only, no monster stats on wiki
+- **Yakuza Boss**: Entry level = Showa Town quest requirement
+- **Frenzied Gigatoad**: HP is 900M in GMS; entry level = Ninja Castle requirement
+- **Extreme Bigfoot**: Monster Park Extreme (260+)
+- **Reina**: Arteria quest boss; entry level = Arteria requirement
+- **Julieta**: Removed (Monad). No HP/level/phases on any wiki
+- **Cross**: Removed JMS/TMS boss. No HP/level/phases on any wiki
+- **Normal Inferno Wolf**: Bounty portal boss, Lv 10-199. HP from Namu Wiki
+- **Chaos Inferno Wolf**: Bounty portal boss, Lv 200-259. HP from Namu Wiki
+- **Extreme Inferno Wolf**: Bounty portal boss, Lv 260+. HP from Namu Wiki
+- **Aufheben**: Event boss
+- **Tweentona**: Event boss
+- **Gerand Darmoor**: No boss fight found on MapleWiki or Namu Wiki (story character only)
+- **Havoc**: No boss fight found on MapleWiki or Namu Wiki (story character only)
