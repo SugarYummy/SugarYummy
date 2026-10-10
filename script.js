@@ -118,7 +118,7 @@ $('mode').addEventListener('change', start);
 $('go').addEventListener('click', guess);
 $('guess').addEventListener('keydown', (e) => { if (e.key === 'Enter') guess(); });
 
-fetch('data/bosses.json')
+fetch('data/bosses.json', { cache: 'no-cache' })
   .then((r) => r.json())
   .then((d) => { data = d; start(); })
   .catch(() => { $('status').textContent = 'Could not load data/bosses.json'; });
