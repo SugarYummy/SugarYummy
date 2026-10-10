@@ -71,8 +71,8 @@ function addRow(cells, cls) {
   $('rows').prepend(tr);
 }
 
-function guessRow(g) {
-  addRow([
+function guessCells(g) {
+  return [
     [g.name, g.name === answer.name ? 'green' : 'red'],
     textCell(g.world, answer.world),
     textCell(g.gender, answer.gender),
@@ -80,8 +80,9 @@ function guessRow(g) {
     numberCell(g.phases, answer.phases, g.phases ?? 'Unknown', closePhases),
     numberCell(g.hp, answer.hp, formatHp(g), closeHp),
     numberCell(g.level, answer.level, g.level ?? 'Unknown', closeLevel),
-  ]);
+  ];
 }
+const guessRow = (g) => addRow(guessCells(g));
 
 function answerRow() {
   const a = answer;
@@ -109,6 +110,7 @@ function start() {
   guesses = [];
   over = false;
   $('rows').innerHTML = '';
+  $('share').hidden = true;
   $('guess').value = '';
   closeList();
   for (const name of load()) {
@@ -126,6 +128,7 @@ function updateStatus(msg) {
 function record(g) {
   guesses.push(g.name);
   guessRow(g);
+  $('share').hidden = true;
   if (g.name === answer.name) {
     over = true;
     updateStatus(`Correct! It was ${answer.name}. Come back tomorrow for a new boss.`);
@@ -136,6 +139,39 @@ function record(g) {
   } else {
     updateStatus();
   }
+  if (over) $('share').hidden = false;
+}
+
+// Puzzle #1 is launch day; numbers count up by one every UTC day.
+const FIRST_DAY = Date.UTC(2026, 9, 10) / DAY_MS;
+const EMOJI = { green: '🟩', yellow: '🟨', red: '🟥' };
+const MODE_NAME = { story: 'Story', normal: 'Normal', hard: 'Hard', extreme: 'Extreme' };
+
+function shareText() {
+  const won = guesses.includes(answer.name);
+  const score = (won ? guesses.length : 'X') + '/' + (maxGuesses ?? '∞');
+  const grid = guesses.map((name) =>
+    guessCells(pool.find((e) => e.name === name)).map(([, c]) => EMOJI[c]).join(''));
+  return [`Maple Wordle #${day - FIRST_DAY + 1} (${MODE_NAME[mode]}) ${score}`, ...grid, location.href.split('#')[0]].join('\n');
+}
+
+function share() {
+  const text = shareText();
+  const done = () => { $('share').textContent = 'Copied!'; setTimeout(() => { $('share').textContent = 'Share'; }, 1500); };
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(text).then(done, () => fallbackCopy(text, done));
+  } else {
+    fallbackCopy(text, done);
+  }
+}
+function fallbackCopy(text, done) {
+  const t = document.createElement('textarea');
+  t.value = text;
+  document.body.appendChild(t);
+  t.select();
+  document.execCommand('copy');
+  t.remove();
+  done();
 }
 
 function guess(name) {
@@ -186,6 +222,7 @@ $('guess').addEventListener('keydown', (e) => {
   else if (e.key === 'Enter') guess(open ? matches[active].name : undefined);
 });
 $('go').addEventListener('click', () => guess());
+$('share').addEventListener('click', share);
 for (const b of document.querySelectorAll('#modes button')) {
   b.addEventListener('click', () => {
     document.querySelector('#modes .on').classList.remove('on');
