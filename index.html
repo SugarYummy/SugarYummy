@@ -5,7 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Maple Wordle</title>
 <style>
-  body { text-align: center; }
+  body { text-align: center; margin: 0; min-height: 100vh; display: flex; flex-direction: column; align-items: center;
+         background: #3b8fe0 url("images/background.webp") center bottom / cover no-repeat fixed; }
+  .panel { background: rgba(255, 255, 255, 0.55); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+           border-radius: 12px; padding: 8px 16px 16px; margin: 16px; max-width: calc(100% - 64px); }
+  .table-wrap { overflow-x: auto; }
+  footer.panel { margin: auto 16px 16px; padding: 8px 16px; }
+  .game { position: relative; z-index: 2; }
+  th { background: rgba(255, 255, 255, 0.6); }
   td, th { border: 1px solid #999; padding: 4px 8px; }
   table { border-collapse: collapse; margin: 8px auto; }
   .green { background: #6c6; }
@@ -21,6 +28,7 @@
 </style>
 </head>
 <body>
+<div class="panel game">
 <h1>Maple Wordle</h1>
 <div id="modes">Mode:
   <button data-mode="story">Story</button>
@@ -36,10 +44,17 @@
   <div id="list" hidden></div>
 </div>
 <button id="go">Guess</button>
+<div class="table-wrap">
 <table>
   <thead><tr><th>Boss</th><th>World</th><th>Gender</th><th>Region</th><th>Phases</th><th>HP</th><th>Entry Lv</th></tr></thead>
   <tbody id="rows"></tbody>
 </table>
+</div>
+</div>
+<footer class="panel">
+  Want to give any suggestions or feedback?<br>
+  <a href="https://discord.gg/f22H4UJ" target="_blank" rel="noopener">Join the Discord!</a>
+</footer>
 <script src="script.js?v=6"></script>
 </body>
 </html>
