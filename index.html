@@ -11,26 +11,34 @@
   .green { background: #6c6; }
   .yellow { background: #ec5; }
   .red { background: #e66; }
+  .answer td { background: #9cf; font-weight: bold; }
+  #modes .on { font-weight: bold; outline: 2px solid #333; }
+  #picker { position: relative; display: inline-block; }
+  #list { position: absolute; top: 100%; left: 0; right: 0; max-height: 240px; overflow-y: auto;
+          background: #fff; border: 1px solid #999; text-align: left; z-index: 1; }
+  #list div { padding: 4px 6px; cursor: pointer; }
+  #list div:hover, #list .active { background: #ddd; }
 </style>
 </head>
 <body>
 <h1>Maple Wordle</h1>
-<label>Mode:
-  <select id="mode">
-    <option value="story">Story</option>
-    <option value="normal" selected>Normal</option>
-    <option value="hard">Hard</option>
-    <option value="extreme">Extreme</option>
-  </select>
-</label>
+<div id="modes">Mode:
+  <button data-mode="story">Story</button>
+  <button data-mode="normal" class="on">Normal</button>
+  <button data-mode="hard">Hard</button>
+  <button data-mode="extreme">Extreme</button>
+</div>
+<p id="timer"></p>
 <p id="status"></p>
-<input id="guess" list="bosses" placeholder="Type a boss">
-<datalist id="bosses"></datalist>
+<div id="picker">
+  <input id="guess" placeholder="Type a boss" autocomplete="off">
+  <div id="list" hidden></div>
+</div>
 <button id="go">Guess</button>
 <table>
   <thead><tr><th>Boss</th><th>World</th><th>Gender</th><th>Region</th><th>Phases</th><th>HP</th><th>Entry Lv</th></tr></thead>
   <tbody id="rows"></tbody>
 </table>
-<script src="script.js?v=4"></script>
+<script src="script.js?v=5"></script>
 </body>
 </html>

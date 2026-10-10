@@ -1,6 +1,8 @@
-let data, pool, answer, guesses, maxGuesses, over;
+let data, mode, day, pool, answer, guesses, maxGuesses, over, matches, active;
 
 const $ = (id) => document.getElementById(id);
+const DAY_MS = 86400000;
+const today = () => Math.floor(Date.now() / DAY_MS); // resets at 00:00 UTC
 
 function formatHp(entry) {
   if (entry.hpLabel) return entry.hpLabel;
@@ -14,8 +16,7 @@ function formatHp(entry) {
 }
 
 // Same answer for everyone on the same day; each mode gets a different one.
-function dailyIndex(mode, size) {
-  const day = Math.floor(Date.now() / 86400000);
+function dailyIndex(size) {
   let h = day;
   for (const c of mode) h = (h * 31 + c.charCodeAt(0)) % 1000003;
   return h % size;
@@ -58,34 +59,20 @@ const closePhases = (g, a) => Math.abs(g - a) <= 1;
 const closeHp = (g, a) => Math.max(g, a) / Math.min(g, a) <= 3;
 const closeLevel = (g, a) => Math.abs(g - a) <= 10;
 
-function start() {
-  const mode = $('mode').value;
-  pool = data.pools[mode === 'story' ? 'normal' : mode];
-  answer = pool[dailyIndex(mode, pool.length)];
-  maxGuesses = data.attempts[mode];
-  guesses = [];
-  over = false;
-  $('rows').innerHTML = '';
-  $('bosses').innerHTML = pool.map((e) => `<option value="${e.name}">`).join('');
-  $('guess').value = '';
-  updateStatus();
+function addRow(cells, cls) {
+  const tr = document.createElement('tr');
+  if (cls) tr.className = cls;
+  for (const [text, c] of cells) {
+    const td = document.createElement('td');
+    td.textContent = text;
+    td.className = c;
+    tr.appendChild(td);
+  }
+  $('rows').prepend(tr);
 }
 
-function updateStatus(msg) {
-  const left = maxGuesses == null ? 'unlimited' : maxGuesses - guesses.length;
-  $('status').textContent = msg || `Guesses left: ${left}`;
-}
-
-function guess() {
-  if (over) return;
-  const name = $('guess').value.trim();
-  const g = pool.find((e) => e.name.toLowerCase() === name.toLowerCase());
-  if (!g) return updateStatus('Pick a boss from the list.');
-  if (guesses.includes(g.name)) return updateStatus('Already guessed.');
-  guesses.push(g.name);
-  $('guess').value = '';
-
-  const cells = [
+function guessRow(g) {
+  addRow([
     [g.name, g.name === answer.name ? 'green' : 'red'],
     textCell(g.world, answer.world),
     textCell(g.gender, answer.gender),
@@ -93,30 +80,129 @@ function guess() {
     numberCell(g.phases, answer.phases, g.phases ?? 'Unknown', closePhases),
     numberCell(g.hp, answer.hp, formatHp(g), closeHp),
     numberCell(g.level, answer.level, g.level ?? 'Unknown', closeLevel),
-  ];
-  const tr = document.createElement('tr');
-  for (const [text, cls] of cells) {
-    const td = document.createElement('td');
-    td.textContent = text;
-    td.className = cls;
-    tr.appendChild(td);
-  }
-  $('rows').prepend(tr);
+  ]);
+}
 
+function answerRow() {
+  const a = answer;
+  addRow([
+    ['Answer: ' + a.name], [a.world ?? 'Unknown'], [a.gender ?? 'Unknown'], [a.region ?? 'Unknown'],
+    [a.phases ?? 'Unknown'], [formatHp(a)], [a.level ?? 'Unknown'],
+  ], 'answer');
+}
+
+// Progress is saved per mode per day, so refreshing can't reset today's guesses.
+const saveKey = () => `mapleWordle:${mode}:${day}`;
+function load() {
+  try { return JSON.parse(localStorage.getItem(saveKey())) || []; } catch { return []; }
+}
+function save() {
+  try { localStorage.setItem(saveKey(), JSON.stringify(guesses)); } catch {}
+}
+
+function start() {
+  mode = document.querySelector('#modes .on').dataset.mode;
+  day = today();
+  pool = data.pools[mode === 'story' ? 'normal' : mode];
+  answer = pool[dailyIndex(pool.length)];
+  maxGuesses = data.attempts[mode];
+  guesses = [];
+  over = false;
+  $('rows').innerHTML = '';
+  $('guess').value = '';
+  closeList();
+  for (const name of load()) {
+    const g = pool.find((e) => e.name === name);
+    if (g && !over) record(g);
+  }
+  if (!over) updateStatus();
+}
+
+function updateStatus(msg) {
+  const left = maxGuesses == null ? 'unlimited' : maxGuesses - guesses.length;
+  $('status').textContent = msg || `Guesses left: ${left}`;
+}
+
+function record(g) {
+  guesses.push(g.name);
+  guessRow(g);
   if (g.name === answer.name) {
     over = true;
-    updateStatus(`Correct! It was ${answer.name}.`);
+    updateStatus(`Correct! It was ${answer.name}. Come back tomorrow for a new boss.`);
   } else if (maxGuesses != null && guesses.length >= maxGuesses) {
     over = true;
-    updateStatus(`Out of guesses. It was ${answer.name}.`);
+    answerRow();
+    updateStatus(`Out of guesses. It was ${answer.name}. Come back tomorrow for a new boss.`);
   } else {
     updateStatus();
   }
 }
 
-$('mode').addEventListener('change', start);
-$('go').addEventListener('click', guess);
-$('guess').addEventListener('keydown', (e) => { if (e.key === 'Enter') guess(); });
+function guess(name) {
+  if (over) return;
+  name = (name ?? $('guess').value).trim();
+  const g = pool.find((e) => e.name.toLowerCase() === name.toLowerCase());
+  if (!g) return updateStatus('Pick a boss from the list.');
+  if (guesses.includes(g.name)) return updateStatus('Already guessed.');
+  $('guess').value = '';
+  closeList();
+  record(g);
+  save();
+}
+
+// Dropdown drawn inside the page (not the browser's native popup), so it shows up on screen shares.
+function openList() {
+  const q = $('guess').value.trim().toLowerCase();
+  matches = pool.filter((e) => !guesses.includes(e.name) && e.name.toLowerCase().includes(q));
+  active = 0;
+  renderList();
+}
+function renderList() {
+  const list = $('list');
+  list.innerHTML = '';
+  matches.forEach((e, i) => {
+    const div = document.createElement('div');
+    div.textContent = e.name;
+    if (i === active) div.className = 'active';
+    div.addEventListener('mousedown', (ev) => { ev.preventDefault(); guess(e.name); });
+    list.appendChild(div);
+  });
+  list.hidden = matches.length === 0 || over;
+  list.querySelector('.active')?.scrollIntoView({ block: 'nearest' });
+}
+function closeList() {
+  matches = [];
+  $('list').hidden = true;
+}
+
+$('guess').addEventListener('input', openList);
+$('guess').addEventListener('focus', openList);
+$('guess').addEventListener('blur', closeList);
+$('guess').addEventListener('keydown', (e) => {
+  const open = !$('list').hidden;
+  if (e.key === 'ArrowDown' && open) { active = Math.min(active + 1, matches.length - 1); renderList(); e.preventDefault(); }
+  else if (e.key === 'ArrowUp' && open) { active = Math.max(active - 1, 0); renderList(); e.preventDefault(); }
+  else if (e.key === 'Escape') closeList();
+  else if (e.key === 'Enter') guess(open ? matches[active].name : undefined);
+});
+$('go').addEventListener('click', () => guess());
+for (const b of document.querySelectorAll('#modes button')) {
+  b.addEventListener('click', () => {
+    document.querySelector('#modes .on').classList.remove('on');
+    b.classList.add('on');
+    if (data) start();
+  });
+}
+
+function tick() {
+  if (data && today() !== day) start();
+  const ms = (today() + 1) * DAY_MS - Date.now();
+  const s = Math.floor(ms / 1000);
+  const pad = (n) => String(n).padStart(2, '0');
+  $('timer').textContent = `New boss in ${pad(Math.floor(s / 3600))}:${pad(Math.floor(s / 60) % 60)}:${pad(s % 60)} (resets 00:00 UTC)`;
+}
+tick();
+setInterval(tick, 1000);
 
 fetch('data/bosses.json', { cache: 'no-cache' })
   .then((r) => r.json())
