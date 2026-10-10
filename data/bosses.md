@@ -44,7 +44,7 @@ Generated from `bosses.json`. ??? = unknown. HP units: M = million, B = billion,
 | Baldrix | Hard | Grandis | Male | All | 3 | 20.1Q | 290 |
 | Jupiter | Hard | Grandis | Male | All | 1 | 49.4Q | 295 |
 | Kai | Hard | Other | Male | Seasonal | 2 | 483T | 280 |
-| Meilin | Hard | Other | ??? | Seasonal | 2 | 580T | 280 |
+| Meilin | Hard | Other | Female | Seasonal | 1 | 580T | 280 |
 
 ## Hard pool (Normal pool + extras) - 44 entries
 
@@ -153,8 +153,8 @@ Only the extras are shown; the Normal pool is included too.
 | Jupiter (Hard) | Hard | Grandis | Male | All | 1 | 49.4Q | 295 |
 | Kai (Normal) | Normal | Other | Male | Seasonal | 2 | 126T | 270 |
 | Kai (Hard) | Hard | Other | Male | Seasonal | 2 | 483T | 280 |
-| Meilin (Normal) | Normal | Other | ??? | Seasonal | 2 | 117.85T | 270 |
-| Meilin (Hard) | Hard | Other | ??? | Seasonal | 2 | 580T | 280 |
+| Meilin (Normal) | Normal | Other | Female | Seasonal | 1 | 117.85T | 270 |
+| Meilin (Hard) | Hard | Other | Female | Seasonal | 1 | 580T | 280 |
 | Balrog | Easy | Maple World | Male | All | 1 | 4.788M | 65 |
 | Ursus | Normal | Maple World | Other | GMS only | 1 | 2.625T | 100 |
 | Yakuza Boss | Normal | Maple World | Male | All | 1 | 1B | 160 |
@@ -183,7 +183,7 @@ Only the extras are shown; the Normal pool is included too.
 - **Kaling**: P1 = 3 perils, P2 = Kaling, P3 = 3 perils + Frenzied Kaling
 - **Limbo**: P2 = two separate parts
 - **Kai**: Challenger World seasonal boss; World set to Other (Nexus Tower)
-- **Meilin**: Namu Wiki: Challenger World Season 4 boss, phase 2 starts at 50% HP. Gender not found
+- **Meilin**: Challenger World Season 4 boss. One HP bar; form/map change at 50% HP is not counted as a new phase
 - **Balrog**: Only Easy mode exists; HP = body + 2 extra parts
 - **Yakuza Boss**: Entry level = Showa Town quest requirement
 - **Frenzied Gigatoad**: HP is 900M in GMS; entry level = Ninja Castle requirement
